@@ -11,3 +11,5 @@ to switch off the relay and power to the UV light circuit. Additionally, as anot
 ) which when pressed will shut down the
 entire UV light circuit.
 
+The circuit will be powered using an 311013-01 plug which connect to both the relay and switch.
+
