@@ -7,6 +7,7 @@ As such, an emergency shutoff is implemented. This will be a dual sided approach
 
 For the hardware implementation, a relay circuit will be implemented so that the power to the UV light circuit is usually on. 
 The application will have an emergency shutoff setting, which when selected, the app will send a signal to the UV light microcontroller
-to switch off the relay and power to the UV light circuit. Additionally, as another failsafe, there will be a manual switch which when pressed will shut down the
+to switch off the relay and power to the UV light circuit. Additionally, as another failsafe, there will be a manual switch ([RE111C1021-116]([url](https://www.digikey.com/en/products/detail/e-switch/RE111C1021-116/4331944))
+) which when pressed will shut down the
 entire UV light circuit.
 
