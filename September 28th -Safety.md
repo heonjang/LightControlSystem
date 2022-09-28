@@ -1,7 +1,7 @@
 ## Safety Updates
 
 ### Emergency Shutoff
-One of the main concerns of this project is the potential for safety failures. Primarily, it is a concernt that the lights might possibly overheat amd start a fire.
+One of the main concerns of this project is the potential for safety failures. Primarily, it is a concern that the lights might possibly overheat and start a fire.
 As such, an emergency shutoff is implemented. This will be a dual sided approach: both through software as well as hardware.
 
 
