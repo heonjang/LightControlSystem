@@ -1,0 +1,12 @@
+## Safety Updates
+
+### Emergency Shutoff
+One of the main concerns of this project is the potential for safety failures. Primarily, it is a concernt that the lights might possibly overheat amd start a fire.
+As such, an emergency shutoff is implemented. This will be a dual sided approach: both through software as well as hardware.
+
+
+For the hardware implementation, a relay circuit will be implemented so that the power to the UV light circuit is usually on. 
+The application will have an emergency shutoff setting, which when selected, the app will send a signal to the UV light microcontroller
+to switch off the relay and power to the UV light circuit. Additionally, as another failsafe, there will be a manual switch which when pressed will shut down the
+entire UV light circuit.
+
