@@ -14,11 +14,12 @@ red, green, and UVA leds as a combination of these was determined to provide opt
 
 Referring to the datasheets each of the LEDs will provide the following light intensity:
 
-|LED | Intensity  |
-|UVA  |  |
-| Blue | |
-| Yellow-Red  | |
-| Green  |  |
+|LED | Intensity  | Viewing Angle | |
+| ----------- | ----------- | ----------- | ----------- |
+| UVA  |  40mcd| 30 degrees| |
+| [Blue](https://www.we-online.com/catalog/datasheet/150141BS73140.pdf)| --- | 125 degrees|27 lm |
+| Yellow-Red  | 100mcd| 130 degrees| |
+| Green  | 500mcd | 120 degrees| |
 
-* The UVA LED used is changed to [MT0380-UV-](https://www.digikey.com/en/products/detail/marktech-optoelectronics/MT0380-UV-A/4214613)
+* The UVA LED used is changed to [MT0380-UV-A](https://www.digikey.com/en/products/detail/marktech-optoelectronics/MT0380-UV-A/4214613)
 
