@@ -1,4 +1,6 @@
 ## Design
+
+### Cost Reduction
 To bring the costs of the grow light module, cheaper components are reselected as shown below: 
 
 | LED      | Cost | Intensity | Comments |
@@ -9,4 +11,7 @@ To bring the costs of the grow light module, cheaper components are reselected a
 | Green  (510-610 nm) | Text        |  ----------- |  ----------- |
 | **Total**  | Text        |  ----------- |  ----------- |
 
+
+### Addons to Design
 To accomodate these LEDs, 5V will be provided to each module instead of 3.3V
+
