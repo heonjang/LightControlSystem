@@ -23,3 +23,5 @@ To accomodate these LEDs, 5V will be provided to each module instead of 3.3V
 | Green | 3.1V |  150mA |  13 ohms|
 
 Took Desired_I values from graphs of datasheet with relative luminosity intensity vs Forward Current and chose values of forward current at 1 relative luminosity intensity.
+
+Things to consider in future: Green LED seem to be much brither than its counterpart. Might want to adjust the number of LEDs so that one wavelength is not dominant, thus minimizing the growth effects that each wavelenghts have on plants.
