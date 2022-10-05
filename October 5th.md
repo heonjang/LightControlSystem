@@ -20,4 +20,4 @@ To accomodate these LEDs, 5V will be provided to each module instead of 3.3V
 | UV | 3.3V |  20mA |  85 ohms |
 | Blue | ----------- |  ----------- |  ----------- |
 | Yellow-Red | 2.1V |  20mA |  145ohms |
-| Green | 3.1V |  150mA |  12.67 |
+| Green | 3.1V |  150mA |  12.67ohms |
