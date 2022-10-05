@@ -15,3 +15,8 @@ To bring down the costs of the grow light module, cheaper components are reselec
 ### Addons to Design
 To accomodate these LEDs, 5V will be provided to each module instead of 3.3V
 
+| LED      | V_on | Desired I | Corresponding Resistor |
+| UV | ----------- |  ----------- |  ----------- |
+| Blue | ----------- |  ----------- |  ----------- |
+| Yellow-Red | ----------- |  ----------- |  ----------- |
+| Green | ----------- |  ----------- |  ----------- |
