@@ -19,5 +19,7 @@ To accomodate these LEDs, 5V will be provided to each module instead of 3.3V
 | ----------- | ----------- |  ----------- |  ----------- |
 | UV | 3.3V |  20mA |  85 ohms |
 | Blue | 3.2V |  30mA |  60 ohms |
-| Yellow-Red | 2.1V |  20mA |  145ohms |
-| Green | 3.1V |  150mA |  12.67 ohm|
+| Yellow-Red | 2.1V |  20mA |  145 ohms |
+| Green | 3.1V |  150mA |  13 ohms|
+
+Took Desired_I values from graphs of datasheet with relative luminosity intensity vs Forward Current and chose values of forward current at 1 relative luminosity intensity.
