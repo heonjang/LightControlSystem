@@ -17,7 +17,7 @@ To accomodate these LEDs, 5V will be provided to each module instead of 3.3V
 
 | LED      | V_on | Desired I | Corresponding Resistor |
 | ----------- | ----------- |  ----------- |  ----------- |
-| UV | ----------- |  ----------- |  ----------- |
+| UV | 3.3V |  20mA |  85 ohms |
 | Blue | ----------- |  ----------- |  ----------- |
 | Yellow-Red | ----------- |  ----------- |  ----------- |
 | Green | ----------- |  ----------- |  ----------- |
