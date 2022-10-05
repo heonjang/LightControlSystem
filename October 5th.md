@@ -1,6 +1,5 @@
 ## Design
-
-
+To bring the costs of the grow light module, cheaper components are reselected as shown below: 
 
 | LED      | Cost | Intensity | Comments |
 | ----------- | ----------- |  ----------- |  ----------- |
