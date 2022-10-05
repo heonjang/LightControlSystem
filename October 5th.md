@@ -20,8 +20,10 @@ To accomodate these LEDs, 5V will be provided to each module instead of 3.3V
 | UV | 3.3V |  20mA |  85 ohms | [100 ohm](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF1210JT100R/1757185) | $0.11 |
 | Blue | 3.2V |  30mA |  60 ohms | ----------- | ----------- |
 | Yellow-Red | 2.1V |  20mA |  145 ohms | ----------- |----------- |
-| Green | 3.1V |  175mA |  10 ohms| [15 ohms](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CF14JT15R0/1741292) $0.10 |
+| Green | 3.1V |  175mA |  10 ohms| [15 ohms](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CF14JT15R0/1741292) | $0.10 |
 
 Took Desired_I values from graphs of datasheet with relative luminosity intensity vs Forward Current and chose values of forward current at 1 relative luminosity intensity.
+
+When choosing resistor values, just to ensure LED life, we purposefully chose higher resistor values so that current going through the LEDs will be smaller.
 
 Things to consider in future: Green LED seem to be much brither than its counterpart. Might want to adjust the number of LEDs so that one wavelength is not dominant, thus minimizing the growth effects that each wavelenghts have on plants.
