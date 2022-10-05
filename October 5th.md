@@ -9,7 +9,7 @@ To bring down the costs of the grow light module, cheaper components are reselec
 | [Blue](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150141BS73130/13584853) (440-500 nm) | $0.40 |  1000mcd (max) |  decently high mcd rating, to avoid burn out might opt for lower intensity |
 | [Yellow-Red](https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/VLMO233U1AA-GS08/3025492) (610-700 nm)  | $0.51        |  760mcd |  ----------- |
 | [Green](https://www.digikey.com/en/products/detail/creeled-inc/XQAGRN-02-0000-000000Z01/5761845) (510-610 nm) | $0.60        |  64lm/W |  Viewing angle is 110, min PPF of 0.48, no units in mcd |
-| **Total**  | Text        |  ----------- |  ----------- |
+| **Total**  | $2.18        |  ----------- |  ----------- |
 
 
 ### Addons to Design
