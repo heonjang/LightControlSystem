@@ -6,3 +6,5 @@ The decision to use LEDs allows for lower voltage options to switch lights on an
 Mainly switching the transistor from saturation (on) to cutoff (off) will achieve the desired results.
 
 ![image](https://user-images.githubusercontent.com/55333859/194380885-5f858004-563a-45f3-9f11-a8600dd6bacb.png)
+
+In order to attain the IB = (VB-VBE)/RB
