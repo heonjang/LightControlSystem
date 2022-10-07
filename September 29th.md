@@ -1,4 +1,4 @@
-## Design Changes
+## LED Component Selection (Preliminary)
 
 UVA LED: [XZVS54S-9C](https://www.digikey.com/en/products/detail/sunled/XZVS54S-9C/9920862)
 3.3 V Forward
