@@ -1,11 +1,10 @@
-## Design
 
-### Relays to Transistors
+## Relays to Transistors
 
 The decision to use LEDs allows for lower voltage options to switch lights on and off. The most cost effective and reliable option being transistors.
 Mainly switching the transistor from saturation (on) to cutoff (off) will achieve the desired results.
 
-#### Simulations / Proof of Concept
+### Simulations / Proof of Concept
 Below is the IV curve for a transistor. When saturated, the maximum current will flow. 
 In this project's design, this maximum current will correspond to the current through the LED which has been adjusted with resistors.
 In cutoff, I_C will be 0, and the LED will be switched off.
@@ -60,4 +59,12 @@ From these simulations, the transistor will function properly as a switch. The m
 desired properties exactly. Resistors will be selected to match the resistances as closely as possible. This will be covered in the following section.
 
 ### Grow Light Design Update
-The 2N2222 NPN transistor used in simulation has a surface mount equivalent, the MMBT2222AM3T5G that will be used. Some of the resistor values are not typical, as such, the following resistors were selected.
+The 2N2222 NPN transistor used in simulation has a surface mount equivalent, the MMBT2222AM3T5G that will be used. Some of the resistor values are not typical, as such, the following components were selected.
+| Component      |Quantity |Price|Comment|
+| ----------- | ----------- |  ----------- |   ----------- |  
+| [NPN transistors](https://www.digikey.com/en/products/detail/onsemi/MMBT2222AM3T5G/2050501) |4 |    $0.23| Transistors for switching |
+| [12kΩ resistor](https://www.digikey.com/en/products/detail/te-connectivity-passive-product/CRGCQ0603F12K/8576303) | 1 |   $0.10 |  Resistor for switching UV LED  |  
+| [6.98kΩ resistor](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0402FT6K98/1761682) 1 |   $0.10 |  Resistor for switching blue LED |  
+| [10.5kΩ resistor](https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-1GNF1052C/2036228) | 1 |  $0.10 |  Resistor for switching yellow-red LED |  
+|[1.58kΩ resistor](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0402FT1K58/1761782)|1| $0.10 | Resistor for switching green LED |
+|**Total**|-------|$0.63||
