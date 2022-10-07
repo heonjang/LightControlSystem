@@ -25,3 +25,6 @@ beta being 100, the following values were calculated
 | Blue |  29mA |  0.29mA| 6.9kΩ ||
 | Yellow-Red | 19.3mA |  0.193mA|  10.4kΩ ohms |  |
 | Green | 127mA |  1.27mA|  1.57kΩ | |
+
+![image](https://user-images.githubusercontent.com/55333859/194468316-a87cef74-6c29-4409-9441-299f900aa319.png)
+
