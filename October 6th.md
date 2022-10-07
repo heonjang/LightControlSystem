@@ -7,4 +7,7 @@ Mainly switching the transistor from saturation (on) to cutoff (off) will achiev
 
 ![image](https://user-images.githubusercontent.com/55333859/194380885-5f858004-563a-45f3-9f11-a8600dd6bacb.png)
 
+![image](https://user-images.githubusercontent.com/55333859/194440346-0d90a380-8ebf-44c0-81f7-620ca4dfba6b.png)
+
+
 In order to attain the IB = (VB-VBE)/RB
