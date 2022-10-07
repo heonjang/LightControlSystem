@@ -27,4 +27,6 @@ beta being 100, the following values were calculated
 | Green | 127mA |  1.27mA|  1.57kΩ | |
 
 ![image](https://user-images.githubusercontent.com/55333859/194468316-a87cef74-6c29-4409-9441-299f900aa319.png)
+![image](https://user-images.githubusercontent.com/55333859/194468360-97ed0e33-b997-4ade-a16c-d1034910330e.png)
+
 
