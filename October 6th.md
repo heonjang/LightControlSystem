@@ -19,11 +19,11 @@ Wurth Electronics provided a [library](https://www.we-online.com/web/en/electron
 
 Following these paramaters, the behavior of the Blue LED was simulated in LTSpice and an IV curve was obtained
 
-![image](https://user-images.githubusercontent.com/55333859/194440451-07d14b07-0c53-4258-8596-1031ad2374b0.png)
+![image](https://user-images.githubusercontent.com/55333859/194476189-213e18ab-9975-4ca8-8a38-540a1433708b.png)
 
 The simulated IV curve is shown below
 
-![image](https://user-images.githubusercontent.com/55333859/194470035-a03532dc-e168-49d2-b4bc-598472edf2d4.png)
+![image](https://user-images.githubusercontent.com/55333859/194475654-b6af6257-5bfa-4aec-ba8f-2c883e02cc79.png)
 
 The actual IV curve taken from the [datasheet](https://www.we-online.com/catalog/datasheet/150141BS73130.pdf) is shown below
 
@@ -46,7 +46,7 @@ beta being 100, the following values were calculated
 The circuit was designed and simulated in LTSpice. The transistor remains biased in cutoff mode until it receives a high signal from the
 microcontroller. At which point, the transistor is saturation and the LED is switched on.
 
-![image](https://user-images.githubusercontent.com/55333859/194468316-a87cef74-6c29-4409-9441-299f900aa319.png)
-![image](https://user-images.githubusercontent.com/55333859/194468360-97ed0e33-b997-4ade-a16c-d1034910330e.png)
+![image](https://user-images.githubusercontent.com/55333859/194475987-7121675b-d698-4ae9-ad58-abbc0cacd6d9.png)
+![image](https://user-images.githubusercontent.com/55333859/194475904-6f15ac96-71a9-4022-bb3b-62e2ac78d36c.png)
 
 
