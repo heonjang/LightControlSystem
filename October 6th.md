@@ -5,6 +5,7 @@
 The decision to use LEDs allows for lower voltage options to switch lights on and off. The most cost effective and reliable option being transistors.
 Mainly switching the transistor from saturation (on) to cutoff (off) will achieve the desired results.
 
+##### Simulations / Proof of Concept
 ![image](https://user-images.githubusercontent.com/55333859/194380885-5f858004-563a-45f3-9f11-a8600dd6bacb.png)
 
 ![image](https://user-images.githubusercontent.com/55333859/194440451-07d14b07-0c53-4258-8596-1031ad2374b0.png)
@@ -25,6 +26,7 @@ beta being 100, the following values were calculated
 | Blue |  29mA |  0.29mA| 6.9kΩ ||
 | Yellow-Red | 19.3mA |  0.193mA|  10.4kΩ ohms |  |
 | Green | 127mA |  1.27mA|  1.57kΩ | |
+
 
 ![image](https://user-images.githubusercontent.com/55333859/194468316-a87cef74-6c29-4409-9441-299f900aa319.png)
 ![image](https://user-images.githubusercontent.com/55333859/194468360-97ed0e33-b997-4ade-a16c-d1034910330e.png)
