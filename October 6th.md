@@ -7,6 +7,8 @@ Mainly switching the transistor from saturation (on) to cutoff (off) will achiev
 
 ![image](https://user-images.githubusercontent.com/55333859/194380885-5f858004-563a-45f3-9f11-a8600dd6bacb.png)
 
+![image](https://user-images.githubusercontent.com/55333859/194440451-07d14b07-0c53-4258-8596-1031ad2374b0.png)
+
 ![image](https://user-images.githubusercontent.com/55333859/194440346-0d90a380-8ebf-44c0-81f7-620ca4dfba6b.png)
 
 
