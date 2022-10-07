@@ -36,12 +36,12 @@ As such, the design aims for a voltage drop of 2V across the resistor to the bas
 Referring to the desired LED currents as described [here](https://github.com/heonjang/LightControlSystem/blob/main/October%205th.md) and 
 beta being 100, the following values were calculated
 
-| LED      | I_C | I_B | Corresponding Resistor |Final Resistor Choice |
-| ----------- | ----------- |  ----------- |  ----------- |  ----------- | 
-| UV |   17mA | 0.17mA | 12kΩ|  |
-| Blue |  29mA |  0.29mA| 6.9kΩ ||
-| Yellow-Red | 19.3mA |  0.193mA|  10.4kΩ ohms |  |
-| Green | 127mA |  1.27mA|  1.57kΩ | |
+| LED      | I_C | I_B | Corresponding Resistor |
+| ----------- | ----------- |  ----------- |  ----------- |  
+| UV |   17mA | 0.17mA | 12kΩ|  
+| Blue |  29mA |  0.29mA| 6.9kΩ |
+| Yellow-Red | 19.3mA |  0.193mA|  10.4kΩ |  
+| Green | 127mA |  1.27mA|  1.57kΩ | 
 
 The circuit was designed and simulated in LTSpice. The transistor remains biased in cutoff mode until it receives a high signal from the
 microcontroller. At which point, the transistor is saturation and the LED is switched on.
