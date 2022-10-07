@@ -19,7 +19,8 @@ Wurth Electronics provided a [library](https://www.we-online.com/web/en/electron
 Following these paramaters, the behavior of the Blue LED was simulated in LTSpice and an IV curve was obtained
 ![image](https://user-images.githubusercontent.com/55333859/194440451-07d14b07-0c53-4258-8596-1031ad2374b0.png)
 
-![image](https://user-images.githubusercontent.com/55333859/194440346-0d90a380-8ebf-44c0-81f7-620ca4dfba6b.png)
+![image](https://user-images.githubusercontent.com/55333859/194470035-a03532dc-e168-49d2-b4bc-598472edf2d4.png)
+
 
 ![image](https://user-images.githubusercontent.com/55333859/194469670-997eb19c-9e39-4dbe-bd8a-044473470bd9.png)
 
