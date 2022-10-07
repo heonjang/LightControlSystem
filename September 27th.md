@@ -1,6 +1,4 @@
-# Design
-
-## Changes
+## Design Changes
 
 The changes we made to our design are as follows:
 
