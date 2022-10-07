@@ -21,7 +21,7 @@ To accomodate these LEDs, 5V will be provided to each module instead of 3.3V
 | Blue | 3.2V |  30mA |  60 ohms | [62 ohm](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF1210JT62R0/1757232) |$0.11|
 | Yellow-Red | 2.1V |  20mA |  145 ohms | [150 ohms](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0805FT150R/1760641) |$0.10 |
 | Green | 3.1V |  175mA |  10 ohms| [15 ohms](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF2512JT15R0/1716289) | $0.28 |
-
+| **Total** | ----------- |  ----------- |  ----------- |----------- | $0.60 |
 Took Desired_I values from graphs of datasheet with relative luminosity intensity vs Forward Current and chose values of forward current at 1 relative luminosity intensity.
 
 When choosing resistor values, just to ensure LED life, we purposefully chose higher resistor values so that current going through the LEDs will be smaller.
