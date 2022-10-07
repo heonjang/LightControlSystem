@@ -1,4 +1,4 @@
-## Design
+## Light Intensity Objectives
 The protoype will be designed to provide light for various types of plants: low, medium and high-light plants.
 
 To best accomodate as many types of plants as possible, the design should produce 1,000+ foot-candles of light.
