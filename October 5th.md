@@ -1,4 +1,4 @@
-## Design
+## Design Changes
 
 ### Cost Reduction
 To bring down the costs of the grow light module, cheaper components are reselected as shown below: 
