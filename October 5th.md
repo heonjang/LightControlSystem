@@ -29,5 +29,4 @@ When choosing resistor values, just to ensure LED life, we purposefully chose hi
 
 Things to consider in future: Green LED seem to be much brither than its counterpart. Might want to adjust the number of LEDs so that one wavelength is not dominant, thus minimizing the growth effects that each wavelenghts have on plants.
 
-### Relays to Transistors
 
