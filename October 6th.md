@@ -12,4 +12,16 @@ Mainly switching the transistor from saturation (on) to cutoff (off) will achiev
 ![image](https://user-images.githubusercontent.com/55333859/194440346-0d90a380-8ebf-44c0-81f7-620ca4dfba6b.png)
 
 
-In order to attain the IB = (VB-VBE)/RB
+The Base−Emitter Saturation voltage for the transistor has a minimum of 0.6V and maximum of 1.2V.
+The minimum V_high of the GPIO pins of the microcontroller is 2.64V, and typically will be below 3.3V.
+As such, the design aims for a voltage drop of 2V across the resistor to the base of the NPN transistor.
+
+Referring to the desired LED currents as described [here](https://github.com/heonjang/LightControlSystem/blob/main/October%205th.md) and 
+beta being 100, the following values were calculated
+
+| LED      | I_C | I_B | Corresponding Resistor |Final Resistor Choice |
+| ----------- | ----------- |  ----------- |  ----------- | 
+| UV |   17mA | 0.17mA | 12Ω|  |
+| Blue |  29mA |  0.29mA| 6.9kΩ ||
+| Yellow-Red | 19.3mA |  0.193mA|  10.4kΩ ohms |  |
+| Green | 127mA |  1.27mA|  1.57kΩ | |
