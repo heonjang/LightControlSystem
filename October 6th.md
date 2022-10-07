@@ -68,3 +68,7 @@ The 2N2222 NPN transistor used in simulation has a surface mount equivalent, the
 | [10.5kΩ resistor](https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-1GNF1052C/2036228) | 1 |  $0.10 |  Resistor for switching yellow-red LED |  
 |[1.58kΩ resistor](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0402FT1K58/1761782)|1| $0.10 | Resistor for switching green LED |
 |**Total**|-------|$0.63||
+
+_The overall cost of one grow module has been reduced from $6.37 to $3.41_ 
+
+The design can now include nearly twice the number grow light modules at the original price.
