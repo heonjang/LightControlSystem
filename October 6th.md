@@ -20,7 +20,7 @@ Referring to the desired LED currents as described [here](https://github.com/heo
 beta being 100, the following values were calculated
 
 | LED      | I_C | I_B | Corresponding Resistor |Final Resistor Choice |
-| ----------- | ----------- |  ----------- |  ----------- | 
+| ----------- | ----------- |  ----------- |  ----------- |  ----------- | 
 | UV |   17mA | 0.17mA | 12Ω|  |
 | Blue |  29mA |  0.29mA| 6.9kΩ ||
 | Yellow-Red | 19.3mA |  0.193mA|  10.4kΩ ohms |  |
