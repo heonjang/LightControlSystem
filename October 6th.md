@@ -18,12 +18,15 @@ Wurth Electronics provided a [library](https://www.we-online.com/web/en/electron
 - RS=1.1837
 
 Following these paramaters, the behavior of the Blue LED was simulated in LTSpice and an IV curve was obtained
+
 ![image](https://user-images.githubusercontent.com/55333859/194440451-07d14b07-0c53-4258-8596-1031ad2374b0.png)
 
 The simulated IV curve is shown below
+
 ![image](https://user-images.githubusercontent.com/55333859/194470035-a03532dc-e168-49d2-b4bc-598472edf2d4.png)
 
 The actual IV curve taken from the [datasheet](https://www.we-online.com/catalog/datasheet/150141BS73130.pdf) is shown below
+
 ![image](https://user-images.githubusercontent.com/55333859/194469670-997eb19c-9e39-4dbe-bd8a-044473470bd9.png)
 
 The Base−Emitter Saturation voltage for the transistor has a minimum of 0.6V and maximum of 1.2V.
@@ -42,6 +45,7 @@ beta being 100, the following values were calculated
 
 The circuit was designed and simulated in LTSpice. The transistor remains biased in cutoff mode until it receives a high signal from the
 microcontroller. At which point, the transistor is saturation and the LED is switched on.
+
 ![image](https://user-images.githubusercontent.com/55333859/194468316-a87cef74-6c29-4409-9441-299f900aa319.png)
 ![image](https://user-images.githubusercontent.com/55333859/194468360-97ed0e33-b997-4ade-a16c-d1034910330e.png)
 
