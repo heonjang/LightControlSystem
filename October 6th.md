@@ -19,9 +19,9 @@ Wurth Electronics provided a [library](https://www.we-online.com/web/en/electron
 Following these paramaters, the behavior of the Blue LED was simulated in LTSpice and an IV curve was obtained
 ![image](https://user-images.githubusercontent.com/55333859/194440451-07d14b07-0c53-4258-8596-1031ad2374b0.png)
 
-![image](https://user-images.githubusercontent.com/55333859/194440346-0d90a380-8ebf-44c0-81f7-620ca4dfba6b.png=250x250)
+![image](https://user-images.githubusercontent.com/55333859/194440346-0d90a380-8ebf-44c0-81f7-620ca4dfba6b.png)
 
-![image](https://user-images.githubusercontent.com/55333859/194469670-997eb19c-9e39-4dbe-bd8a-044473470bd9.png=250x250)
+![image](https://user-images.githubusercontent.com/55333859/194469670-997eb19c-9e39-4dbe-bd8a-044473470bd9.png)
 
 The Base−Emitter Saturation voltage for the transistor has a minimum of 0.6V and maximum of 1.2V.
 The minimum V_high of the GPIO pins of the microcontroller is 2.64V, and typically will be below 3.3V.
