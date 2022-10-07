@@ -64,11 +64,11 @@ The 2N2222 NPN transistor used in simulation has a surface mount equivalent, the
 | ----------- | ----------- |  ----------- |   ----------- |  
 | [NPN transistors](https://www.digikey.com/en/products/detail/onsemi/MMBT2222AM3T5G/2050501) |4 |    $0.23| Transistors for switching |
 | [12kΩ resistor](https://www.digikey.com/en/products/detail/te-connectivity-passive-product/CRGCQ0603F12K/8576303) | 1 |   $0.10 |  Resistor for switching UV LED  |  
-| [6.98kΩ resistor](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0402FT6K98/1761682) 1 |   $0.10 |  Resistor for switching blue LED |  
+| [6.98kΩ resistor](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0402FT6K98/1761682) | 1|  $0.10 |  Resistor for switching blue LED |  
 | [10.5kΩ resistor](https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-1GNF1052C/2036228) | 1 |  $0.10 |  Resistor for switching yellow-red LED |  
 |[1.58kΩ resistor](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0402FT1K58/1761782)|1| $0.10 | Resistor for switching green LED |
-|**Total**|-------|$0.63||
+|**Total**|-------|$1.32||
 
-_The overall cost of one grow module has been reduced from $6.37 to $3.41_ 
+_The overall cost of one grow module has been reduced from $6.37 to $4.1_ 
 
-The design can now include nearly twice the number grow light modules at the original price.
+The design can now include over 1.5 times the number grow light modules at the original price.
