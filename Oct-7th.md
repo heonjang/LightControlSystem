@@ -12,7 +12,7 @@ From the design document, the effective wavelength for the plant's growth is 370
 
 
 ### LED Chart
-From the [previous LED data table](https://github.com/heonjang/LightControlSystem/blob/main/October%205th.md), we can build foot-candle per unit.
+From the [previous LED data table](https://github.com/heonjang/LightControlSystem/blob/main/October%205th.md), we can build a foot-candle per unit table.
 
 1000 MCD = 1 CD = 1 foot-candle
 
@@ -21,9 +21,9 @@ From the [previous LED data table](https://github.com/heonjang/LightControlSyste
 | [UV](https://www.mouser.com/ProductDetail/Kingbright/AA3528VRVFS-A?qs=rY7msk5yxfb63mh907EyRA%3D%3D) (315-400 nm)     | $0.67      |  0.25 | $2.68 |
 | [Blue](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150141BS73130/13584853) (440-500 nm) | $0.40 |  1 | $0.4 |
 | [Yellow-Red](https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/VLMO233U1AA-GS08/3025492) (610-700 nm)  | $0.51  |  0.76 | $0.67 |
-| [Green](https://www.digikey.com/en/products/detail/creeled-inc/XQAGRN-02-0000-000000Z01/5761845) (510-610 nm) | - excluded - |  - excluded - |  - excluded -  |
+| [Green](https://www.digikey.com/en/products/detail/creeled-inc/XQAGRN-02-0000-000000Z01/5761845) (510-610 nm) | - excluded - |  - excluded - | - excluded - |
  
-The Green light is exclude from the consideration because it is meaningless to the plant's growth_
+_The Green light is exclude from the consideration because it is meaningless to the plant's growth_
 
 Therefore, if we only use the Blue LED which is the most cost-effective one, we will need to have 1000 of them at $400.
 This is impossible to both buy/solder. Therefore we need to
