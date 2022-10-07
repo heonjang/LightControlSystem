@@ -30,6 +30,6 @@ This is impossible to both buy/solder. Therefore we need to
 
 consider one or a combination of 
 
-1. Think of much more powerful/efficient light source
-2. Reduce the distance between the light source and the plants (my current assumption was 1 foot)
+1. Think of much more powerful/efficient light sources
+2. Reduce the distance between the light source and the plants (The current assumption was 1 foot)
 3. Lower the target illumination
