@@ -56,4 +56,8 @@ microcontroller. At which point, the transistor is saturation and the LED is swi
 ![image](https://user-images.githubusercontent.com/55333859/194475987-7121675b-d698-4ae9-ad58-abbc0cacd6d9.png)
 ![image](https://user-images.githubusercontent.com/55333859/194475904-6f15ac96-71a9-4022-bb3b-62e2ac78d36c.png)
 
+From these simulations, the transistor will function properly as a switch. The modeled circuit was based on ideal components matching the 
+desired properties exactly. Resistors will be selected to match the resistances as closely as possible. This will be covered in the following section.
 
+### Grow Light Design Update
+The 2N2222 NPN transistor used in simulation has a surface mount equivalent, the MMBT2222AM3T5G that will be used. Some of the resistor values are not typical, as such, the following resistors were selected.
