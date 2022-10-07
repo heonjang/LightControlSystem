@@ -12,7 +12,7 @@ In cutoff, I_C will be 0, and the LED will be switched off.
 
 ![image](https://user-images.githubusercontent.com/55333859/194380885-5f858004-563a-45f3-9f11-a8600dd6bacb.png)
 
-Wurth Electronics provided a [library](https://www.we-online.com/web/en/electronic_components/produkte_pb/bauteilebibliotheken/main_frame_only/pspice.php) defining model parameters for the Blue LED from the grow modules : 
+Wurth Electronics provided a [library](https://www.we-online.com/catalog/en/WL-SMTW) defining model parameters for the Blue LED from the grow modules : 
 - IS=48.651E-12
 - N=4.7513
 - RS=1.1837
