@@ -8,13 +8,13 @@ Therefore, the system has to be able to offer at most 1000 foot candles for each
 
 <img width="581" alt="Screen Shot 2022-10-07 at 11 19 22 AM" src="https://user-images.githubusercontent.com/103418311/194600845-5981b728-a65e-4637-b0ab-d12d1428f7c9.png">
 
-From the design document, the effective wavelength for the plant growth is 370 ~ 500 / 600 ~ 700 nm
+From the design document, the effective wavelength for the plant's growth is 370 ~ 500 / 600 ~ 700 nm
 
 
 ### LED Chart
 From the [previous LED data table](https://github.com/heonjang/LightControlSystem/blob/main/October%205th.md), we can build foot-candle per unit.
 
-1 MCD = 1 CD = 1 foot-candle
+1000 MCD = 1 CD = 1 foot-candle
 
 | LED      | Cost | foot-candle | Cost / foot-candle |
 | ----------- | ----------- |  ----------- |  ----------- |
