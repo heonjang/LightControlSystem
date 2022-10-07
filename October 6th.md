@@ -72,3 +72,10 @@ The 2N2222 NPN transistor used in simulation has a surface mount equivalent, the
 _The overall cost of one grow module has been reduced from $6.37 to $4.1_ 
 
 The design can now include over 1.5 times the number grow light modules at the original price.
+
+#### To-Do
+[] Replace the AC-DC converter with one that outpus 5V (for LEDs)
+[] Add a converter to convert from 5V to 3.3V (for microcontroller/photosensor)
+[] Determine how many grow-light modules can/should be added to design
+[] Revise schematics/work on board
+[] Look at connectors
