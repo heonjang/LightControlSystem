@@ -16,6 +16,13 @@ Wurth Electronics provided a [library](https://www.we-online.com/catalog/en/WL-S
 - IS=48.651E-12
 - N=4.7513
 - RS=1.1837
+- IKF=431.41E-6
+- CJO=1.0000E-12
+- M=.3333
+- VJ=.75
+- BV=5
+- IBV=10.00E-6
+- TT=5.0000E-9
 
 Following these paramaters, the behavior of the Blue LED was simulated in LTSpice and an IV curve was obtained
 
