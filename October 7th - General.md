@@ -24,7 +24,5 @@ New current limiting resistors had to be selected as follows:
 | ----------- | ----------- |  ----------- |   ----------- |  
 | [NPN transistors](https://www.digikey.com/en/products/detail/onsemi/MMBT2222AM3T5G/2050501) |4 |    $0.23| Transistors for switching |
 | [12kΩ resistor](https://www.digikey.com/en/products/detail/te-connectivity-passive-product/CRGCQ0603F12K/8576303) | 1 |   $0.10 |  Resistor for switching UV LED  |  
- 
-| [10.5kΩ resistor](https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-1GNF1052C/2036228) | 3 |  $0.10 |  Resistor for switching red, blue and green LEDs |  
-
+ | [10.5kΩ resistor](https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-1GNF1052C/2036228) | 3 |  $0.10 |  Resistor for switching red, blue and green LEDs |  
 |**Total**|-------|$1.32||
