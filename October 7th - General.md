@@ -7,8 +7,7 @@ benefits being cost and design simplicity. Additionally, this will greatly reduc
 | LED      | Cost | Intensity | Comments |
 | ----------- | ----------- |  ----------- |  ----------- |
 | [UV](https://www.mouser.com/ProductDetail/Kingbright/AA3528VRVFS-A?qs=rY7msk5yxfb63mh907EyRA%3D%3D) (315-400 nm)     | $0.67      |  250mcd |  ----------- |
-| [RGB](https://www.digikey.com/en/products/detail/creeled-inc/CLV1A-FKB-CK1VW1DE1BB7C3C3/7907693) | $0.42 |  710mcd Red, 1450mcd Green, 310mcd Blue |  decently high mcd rating, to avoid burn out might opt for lower intensity |
-
+| [RGB](https://www.digikey.com/en/products/detail/creeled-inc/CLV1A-FKB-CK1VW1DE1BB7C3C3/7907693) | $0.42 |  710mcd Red, 1450mcd Green, 310mcd Blue |  ----------- |
 | **Total**  | $1.09        |  ----------- |  ----------- |
 
 
@@ -18,4 +17,4 @@ benefits being cost and design simplicity. Additionally, this will greatly reduc
 | Blue | 3.2V |  20mA |  90 ohms | [90.9 ohms](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT90R9/1760976) |$0.10|
 | Yellow-Red | 2V |  20mA |  150 ohms | [150 ohms](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0805FT150R/1760641) |$0.10 |
 | Green | 3.2V |  20mA |  90 ohms| [90.9 ohms](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT90R9/1760976) | $0.10 |
-| **Total** | ----------- |  ----------- |  ----------- |----------- | $0.60 |
+| **Total** | ----------- |  ----------- |  ----------- |----------- | $0.41 |
