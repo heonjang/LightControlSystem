@@ -10,6 +10,7 @@ benefits being cost and design simplicity. Additionally, this will greatly reduc
 | [RGB](https://www.digikey.com/en/products/detail/creeled-inc/CLV1A-FKB-CK1VW1DE1BB7C3C3/7907693) | $0.42 |  710mcd Red, 1450mcd Green, 310mcd Blue |  ----------- |
 | **Total**  | $1.09        |  ----------- |  ----------- |
 
+New current limiting resistors had to be selected as follows:
 
 | LED      | V_on | Desired I | Corresponding Resistor |Final Resistor Choice |Cost |
 | ----------- | ----------- |  ----------- |  ----------- |----------- | ----------- |
@@ -18,3 +19,12 @@ benefits being cost and design simplicity. Additionally, this will greatly reduc
 | Yellow-Red | 2V |  20mA |  150 ohms | [150 ohms](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0805FT150R/1760641) |$0.10 |
 | Green | 3.2V |  20mA |  90 ohms| [90.9 ohms](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT90R9/1760976) | $0.10 |
 | **Total** | ----------- |  ----------- |  ----------- |----------- | $0.41 |
+
+| Component      |Quantity |Price|Comment|
+| ----------- | ----------- |  ----------- |   ----------- |  
+| [NPN transistors](https://www.digikey.com/en/products/detail/onsemi/MMBT2222AM3T5G/2050501) |4 |    $0.23| Transistors for switching |
+| [12kΩ resistor](https://www.digikey.com/en/products/detail/te-connectivity-passive-product/CRGCQ0603F12K/8576303) | 1 |   $0.10 |  Resistor for switching UV LED  |  
+ 
+| [10.5kΩ resistor](https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-1GNF1052C/2036228) | 3 |  $0.10 |  Resistor for switching red, blue and green LEDs |  
+
+|**Total**|-------|$1.32||
