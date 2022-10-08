@@ -20,6 +20,15 @@ New current limiting resistors had to be selected as follows:
 | Green | 3.2V |  20mA |  90 ohms| [90.9 ohms](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT90R9/1760976) | $0.10 |
 | **Total** | ----------- |  ----------- |  ----------- |----------- | $0.41 |
 
+After further analysis, having four npn transistors was redundant. One npn transistor could readily handle switching all the LEDs as they only draw
+80mA of current total. 
+
+![image](https://user-images.githubusercontent.com/55333859/194726787-7b22bcd2-2744-4b0b-8d05-3e01b806c8d9.png)
+
+![image](https://user-images.githubusercontent.com/55333859/194726841-8ffd0892-efc9-4d89-a40b-d1828a771d9f.png)
+
+
+
 Since the LEDs have been changed, the resistors to limit the base current drawn from the microcontrollers also had to be changed as follows:
 
 | Component      |Quantity |Price|Comment|
