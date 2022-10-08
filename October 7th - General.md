@@ -28,6 +28,6 @@ Since the LEDs have been changed, the resistors to limit the base current drawn 
 | [12kΩ resistor](https://www.digikey.com/en/products/detail/te-connectivity-passive-product/CRGCQ0603F12K/8576303) | 1 |   $0.10 |  Resistor for switching UV LED  |  
 | [2.55kΩ resistor](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF1206FT2K55/1759883) | 1 |   $0.10 |  Resistor for limiting current from GPIO pin  |  
  | [10.5kΩ resistor](https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-1GNF1052C/2036228) | 3 |  $0.10 |  Resistor for switching red, blue and green LEDs |  
-|**Total**|-------|$1.32||
+|**Total**|-------|$0.73||
 
-The total cost of a grow light module has been further reduced from $4.10 to $2.92. Additionally, these changes allows for us to easily breadboard and test the circuit before ordering the PCB.
+The total cost of a grow light module has been further reduced from $4.10 to $2.23. Additionally, these changes allows for us to easily breadboard and test the circuit before ordering the PCB.
