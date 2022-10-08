@@ -24,7 +24,7 @@ After further analysis, having four npn transistors was redundant. One npn trans
 80mA of current total. Verifying simulations are shown belown. The simulations are using an LED model which is expected to draw 30mA.
 
 
-![image](https://user-images.githubusercontent.com/55333859/194726884-4acb0d2f-5c94-4a49-a9f2-5ccd89aeefde.png)
+![image](https://user-images.githubusercontent.com/55333859/194727519-c38282bb-ff42-4c5b-b185-d36dfa78882e.png)
 
 ![image](https://user-images.githubusercontent.com/55333859/194726919-bf076c71-2adc-4629-890d-5e17434ef0d6.png)
 
