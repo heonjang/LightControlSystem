@@ -20,9 +20,13 @@ New current limiting resistors had to be selected as follows:
 | Green | 3.2V |  20mA |  90 ohms| [90.9 ohms](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT90R9/1760976) | $0.10 |
 | **Total** | ----------- |  ----------- |  ----------- |----------- | $0.41 |
 
+Since the LEDs have been changed, the resistors to limit the base current drawn from the microcontrollers also had to be changed as follows:
+
 | Component      |Quantity |Price|Comment|
 | ----------- | ----------- |  ----------- |   ----------- |  
 | [NPN transistors](https://www.digikey.com/en/products/detail/onsemi/MMBT2222AM3T5G/2050501) |4 |    $0.23| Transistors for switching |
 | [12kΩ resistor](https://www.digikey.com/en/products/detail/te-connectivity-passive-product/CRGCQ0603F12K/8576303) | 1 |   $0.10 |  Resistor for switching UV LED  |  
  | [10.5kΩ resistor](https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-1GNF1052C/2036228) | 3 |  $0.10 |  Resistor for switching red, blue and green LEDs |  
 |**Total**|-------|$1.32||
+
+The total cost of a grow light module has been further reduced from $4.10 to $2.82. M, these changes allows for us to easily breadboard and test the circuit before ordering the PCB.
