@@ -21,11 +21,13 @@ New current limiting resistors had to be selected as follows:
 | **Total** | ----------- |  ----------- |  ----------- |----------- | $0.41 |
 
 After further analysis, having four npn transistors was redundant. One npn transistor could readily handle switching all the LEDs as they only draw
-80mA of current total. 
+80mA of current total. Verifying simulations are shown belown. The simulations are using an LED model which is expected to draw 30mA.
 
-![image](https://user-images.githubusercontent.com/55333859/194726787-7b22bcd2-2744-4b0b-8d05-3e01b806c8d9.png)
 
-![image](https://user-images.githubusercontent.com/55333859/194726841-8ffd0892-efc9-4d89-a40b-d1828a771d9f.png)
+![image](https://user-images.githubusercontent.com/55333859/194726884-4acb0d2f-5c94-4a49-a9f2-5ccd89aeefde.png)
+
+![image](https://user-images.githubusercontent.com/55333859/194726919-bf076c71-2adc-4629-890d-5e17434ef0d6.png)
+
 
 
 
