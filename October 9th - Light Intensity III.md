@@ -52,5 +52,5 @@ The resistors to limit the base current drawn from the microcontrollers changed 
 | Component      |Quantity |Price|Comment|
 | ----------- | ----------- |  ----------- |   ----------- |  
 | [NPN transistors](https://www.digikey.com/en/products/detail/onsemi/MMBT2222AM3T5G/2050501) |1 |    $0.23| Transistors for switching |
-| [2.37kΩ resistor](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF1206FG2K37/1758792) | 1 |   $0.10 |  Base Resistor for switching LEDs  |  
+| [374Ω resistor](https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-6ENF3740V/111199) | 1 |   $0.10 |  Base Resistor for switching LEDs  |  
 |**Total**|-------|$0.33||
