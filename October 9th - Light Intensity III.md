@@ -14,7 +14,7 @@ The previous selection of LEDs failed to provide enough lumens. As such these wi
 ## Reselecting LEDs
 The RGB LED from before can be replaced by a white light LED. In particular, [this LED](https://www.digikey.com/en/products/detail/ams-osram-usa-inc/GW-P9LR35-PM-M2M3-XX57-1-180-R18/9641611) was selected for its high lumen output and price.
 
-The following plot taken from the datasheet shows the relative intensity vs wavelength. Notably, the LED will provide a combination of red, green and blue light. The blue light is the dominant wavelength, followed by red then green.
+The following plot taken from the datasheet shows the relative intensity vs wavelength. Notably, the LED will provide a combination of red, green and blue light. The blue light is the dominant wavelength, followed by red then green. TO accomodate 
 
 ![image](https://user-images.githubusercontent.com/55333859/194781914-64680adb-7ed1-4217-987a-64310fec482a.png)
 
@@ -23,13 +23,13 @@ UV LEDs have shown to both be costly and emit low levels of light. As such, give
 | LED      | Cost | Intensity | Comments |
 | ----------- | ----------- |  ----------- |  ----------- |
 | [White](https://www.digikey.com/en/products/detail/ams-osram-usa-inc/GW-P9LR35-PM-M2M3-XX57-1-180-R18/9641611) | $1.00 | 200lm |  ----------- |
-| **Total**  | $0.42        |  ----------- |  ----------- |
+| **Total**  | $1        |  ----------- |  ----------- |
 
 New current limiting resistors had to be selected as follows:
 
 | LED      | V_on | Desired I | Corresponding Resistor |Final Resistor Choice |Cost |
 | ----------- | ----------- |  ----------- |  ----------- |----------- | ----------- |
-| White | 2.75V |  65mA |  34.62 ohms | [34.8 ohms](https://www.digikey.com/en/products/detail/yageo/RC1206FR-0734R8L/728828) |$0.10|
+| White | 5.55V |  180mA |  34.62 ohms | [34.8 ohms](https://www.digikey.com/en/products/detail/yageo/RC1206FR-0734R8L/728828) |$0.10|
 | **Total** | ----------- |  ----------- |  ----------- |----------- | $0.10 |
 
 
