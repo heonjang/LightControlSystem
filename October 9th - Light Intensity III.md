@@ -45,7 +45,8 @@ Assuming the use of a 12V power supply, new current limiting resistors were sele
 | **Total** | ----------- |  ----------- |  ----------- |----------- | $0.59 |
 
 
-Due to the reduction and change of types of LEDs, the grow light module needs to be restructured. Mainly, the transistors have a maximum collector current of 600mA. This opens the door to having up to 9 white LEDs per module. For the sake of adjustability, each module should be moderately bright or even low brightness. This led to the design choice of 8 LEDs per module. As a result, each module would have approximately 320 lumens of light, 
+Due to the reduction and change of types of LEDs, the grow light module needs to be restructured. Mainly, the transistors have a maximum collector current of 600mA. This opens the door to having up to 3 white LEDs per module. Having 3 LEDs in a module allows
+
 The resistors to limit the base current drawn from the microcontrollers changed as follows:
 
 | Component      |Quantity |Price|Comment|
