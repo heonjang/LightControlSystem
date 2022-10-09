@@ -5,6 +5,8 @@ Currently the fundamental design question needs to be answered: _How much light 
 ## Design Analysis
 Referring to the final LED choice described in [the journal entry from October 7th](https://github.com/heonjang/LightControlSystem/blob/Christelle/October%207th%20-%20General.md), each grow light module will provide 2.72 cd. Candela is the intensity illuminated along a line 0 degrees from the LED. Since our main concern is how much light our design for an area of plants, the candela unit is not sufficient. The following page will walk through using the units of candela to determine the illuminance on a square foot of area.
 
+Previously, it was determined that to best accomodate all types of plants, our prototype should provide 1000+ foot-candles of light.
+
 ### Units of Light Intensity
 A foot-candle is [defined as](https://www.studiobinder.com/blog/what-is-a-foot-candle-definition/) "the amount of light that falls on a surface that is 1 foot away from a singular candle". The following diagrams illustrate common standards of light illuminance
 
