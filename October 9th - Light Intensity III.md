@@ -1,2 +1,1 @@
-# Light Intensity
-
+# Light Intensity III
