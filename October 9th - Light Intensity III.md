@@ -30,10 +30,11 @@ New current limiting resistors had to be selected as follows:
 
 | LED      | V_on | Desired I | Corresponding Resistor |Final Resistor Choice |Cost |
 | ----------- | ----------- |  ----------- |  ----------- |----------- | ----------- |
-| UV | 3.3V |  20mA |  85 ohms | [100 ohm](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF1210JT100R/1757185) | $0.11 |
 | White | 2.75V |  65mA |  34.62 ohms | [34.8 ohms](https://www.digikey.com/en/products/detail/yageo/RC1206FR-0734R8L/728828) |$0.10|
-| **Total** | ----------- |  ----------- |  ----------- |----------- | $0.21 |
+| **Total** | ----------- |  ----------- |  ----------- |----------- | $0.10 |
 
+
+Due to the reduction and change of types of LEDs, the grow light module needs to be restructured. Mainly, the transistors have a maximum collector current of 600mA. This opens the door to having up to 9 white LEDs per module. For the sake of adjustability, each module should be moderately bright or even low brightness. This led to the design choice of 8 LEDs per module. As a result, each module would have approximately 320 lumens of light, 
 The resistors to limit the base current drawn from the microcontrollers changed as follows:
 
 | Component      |Quantity |Price|Comment|
