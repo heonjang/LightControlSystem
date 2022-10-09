@@ -12,18 +12,17 @@ The success of our design relies on at minimum attaining the first objective.
 The previous selection of LEDs failed to provide enough lumens. As such these will have to be reselected.
 
 ## Reselecting LEDs
-The RGB LED from before can be replaced by a white light LED. In particular, the [LM301H](https://www.digikey.com/en/products/detail/samsung-semiconductor-inc/SPMWHD32AMH5XAU5SL/12083566) was selected for its high lumen output and price.
+The RGB LED from before can be replaced by a white light LED. In particular, [this LED](https://www.digikey.com/en/products/detail/ams-osram-usa-inc/GW-P9LR35-PM-M2M3-XX57-1-180-R18/9641611) was selected for its high lumen output and price.
 
-The following plot taken from the datasheet shows the relative intensity vs wavelength. Notably, the LED will provide a combination of red, green and blue light. The red light is the dominant wavelength, followed by blue then green.
+The following plot taken from the datasheet shows the relative intensity vs wavelength. Notably, the LED will provide a combination of red, green and blue light. The blue light is the dominant wavelength, followed by red then green.
 
-![image](https://user-images.githubusercontent.com/55333859/194769328-9ac41cc9-1e05-4a55-9aa4-649f6a0ed990.png)
-
+![image](https://user-images.githubusercontent.com/55333859/194781914-64680adb-7ed1-4217-987a-64310fec482a.png)
 
 UV LEDs have shown to both be costly and emit low levels of light. As such, given budget constraints, it would be better to replace these with another more cost effective LED. In particular, the white LED alone should be sufficient. Mainly, the combination of red, green and blue are all beneficial to plant growth (see [here](https://lightsciencetech.com/visible-wavelength-range-plant-growth/#:~:text=610-700%20nm%20is%20considered,plant%20growth%20and%20optimised%20yield)). On a higher budget, UVA or far red LEDs could be added to further supplement the light to the plant.
 
 | LED      | Cost | Intensity | Comments |
 | ----------- | ----------- |  ----------- |  ----------- |
-| [White](https://www.digikey.com/en/products/detail/samsung-semiconductor-inc/SPMWHD32AMH5XAU5SL/12083566) | $0.42 | 39lm |  ----------- |
+| [White](https://www.digikey.com/en/products/detail/ams-osram-usa-inc/GW-P9LR35-PM-M2M3-XX57-1-180-R18/9641611) | $1.00 | 200lm |  ----------- |
 | **Total**  | $0.42        |  ----------- |  ----------- |
 
 New current limiting resistors had to be selected as follows:
