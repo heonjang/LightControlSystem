@@ -30,7 +30,7 @@ To accomodate the white LED, VDD will have to be above the forward voltage of 5.
 To meet each objective, there must be:
 
 |Objective |  Number of LEDs      | Power|  Current| Comments |
-| ----------- | ----------- |  ----------- |  ----------- |
+| ----------- | ----------- |  ----------- |  ----------- | ----------- |
 | Low-Light | 9 |  8.91W | 1.62A |  ----------- |
 | Mid-Light | 41 |  40.59W | 7.31A |  ----------- |
 | High-Light | 54 |  53.46W | 9.72A |  ----------- |
