@@ -18,6 +18,8 @@ The following plot taken from the datasheet shows the relative intensity vs wave
 
 ![image](https://user-images.githubusercontent.com/55333859/194769328-9ac41cc9-1e05-4a55-9aa4-649f6a0ed990.png)
 
+UV LEDs have shown to both be costly and emit low levels of light. As such, given budget constraints, it would be better to replace these with another more cost effective LED. In particular, far red light is another beneficial wavelength of light to plant growth (see [here](https://lightsciencetech.com/visible-wavelength-range-plant-growth/#:~:text=610-700%20nm%20is%20considered,plant%20growth%20and%20optimised%20yield)). Following this line of reasoning, the UV LED could be replaced with a far red LED.
+
 | LED      | Cost | Intensity | Comments |
 | ----------- | ----------- |  ----------- |  ----------- |
 | [UV](https://www.mouser.com/ProductDetail/Kingbright/AA3528VRVFS-A?qs=rY7msk5yxfb63mh907EyRA%3D%3D) (315-400 nm)     | $0.67      |  250mcd |  ----------- |
