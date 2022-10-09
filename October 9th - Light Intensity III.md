@@ -14,7 +14,7 @@ The previous selection of LEDs failed to provide enough lumens. As such these wi
 ## Reselecting LEDs
 The RGB LED from before can be replaced by a white light LED. In particular, [this LED](https://www.digikey.com/en/products/detail/ams-osram-usa-inc/GW-P9LR35-PM-M2M3-XX57-1-180-R18/9641611) was selected for its high lumen output and price.
 
-The following plot taken from the datasheet shows the relative intensity vs wavelength. Notably, the LED will provide a combination of red, green and blue light. The blue light is the dominant wavelength, followed by red then green. TO accomodate 
+The following plot taken from the datasheet shows the relative intensity vs wavelength. Notably, the LED will provide a combination of red, green and blue light. The blue light is the dominant wavelength, followed by red then green. 
 
 ![image](https://user-images.githubusercontent.com/55333859/194781914-64680adb-7ed1-4217-987a-64310fec482a.png)
 
@@ -24,6 +24,14 @@ UV LEDs have shown to both be costly and emit low levels of light. As such, give
 | ----------- | ----------- |  ----------- |  ----------- |
 | [White](https://www.digikey.com/en/products/detail/ams-osram-usa-inc/GW-P9LR35-PM-M2M3-XX57-1-180-R18/9641611) | $1.00 | 200lm |  ----------- |
 | **Total**  | $1        |  ----------- |  ----------- |
+
+
+To accomodate the white LED, VDD will have to be above the forward voltage of 5.5V. When selecting the corresponding AC/DC converter, the power rating will have to be above the power consumed by the LEDs. 
+To meet each objective, there must be:
+1. 9 white LEDs, 1.6W
+2. 41 white LEDs, 7.31W
+3. 54 white LEDs, 9.62W
+
 
 New current limiting resistors had to be selected as follows:
 
