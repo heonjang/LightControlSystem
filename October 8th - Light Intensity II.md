@@ -11,7 +11,8 @@ A foot-candle is [defined as](https://www.studiobinder.com/blog/what-is-a-foot-c
 
 ![image](https://user-images.githubusercontent.com/55333859/194732442-00fbd7e8-c797-4137-8e7d-c01b31bc6764.png)
 
-The datasheet of the RGB LEDs
+The datasheet of the both the RGB and UV LEDs, provide graphs of luminous intensity versus angle from the LED. In both the apex angle, the angle where luminous intensity is 50% is 60 degrees. These plots are provided below.
+
 ![image](https://user-images.githubusercontent.com/55333859/194732379-a41d7f7c-9434-43a0-a963-6f38e6b423af.png)
 
 ![image](https://user-images.githubusercontent.com/55333859/194732904-75807c24-6e40-408b-958c-d50f1a10466f.png)
