@@ -80,3 +80,8 @@ db:
 ```
 
 
+The current main page:
+
+<img width="1690" alt="Screen Shot 2022-10-09 at 5 09 00 PM" src="https://user-images.githubusercontent.com/103418311/194781785-19688712-0540-4f3b-9cd1-4aadd2b025e3.png">
+
+
