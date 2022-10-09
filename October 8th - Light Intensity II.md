@@ -17,7 +17,7 @@ A foot-candle is [defined as](https://www.studiobinder.com/blog/what-is-a-foot-c
 
 
 ### Converting Candela to Lumens
-The datasheet of the both the RGB and UV LEDs, provide graphs of luminous intensity versus angle from the LED. In both the apex angle, the angle where luminous intensity is 50% is 60 degrees. These plots are provided below.
+The datasheet of the both the RGB and UV LEDs, provide graphs of luminous intensity versus angle from the LED. In both the apex angle, the angle where luminous intensity is 50% is 120 degrees (±60  degrees). These plots are provided below.
 
 ![image](https://user-images.githubusercontent.com/55333859/194732379-a41d7f7c-9434-43a0-a963-6f38e6b423af.png)
 
