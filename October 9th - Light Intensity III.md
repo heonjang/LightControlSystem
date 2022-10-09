@@ -23,7 +23,7 @@ UV LEDs have shown to both be costly and emit low levels of light. As such, give
 
 | LED      | Cost | Intensity | Comments |
 | ----------- | ----------- |  ----------- |  ----------- |
-| [Red](https://www.digikey.com/en/products/detail/samsung-semiconductor-inc/SPHRD3L3DH20C5W43B/14663331)     | $2.31      |   |  ----------- |
+| [Red](https://www.digikey.com/en/products/detail/samsung-semiconductor-inc/SPHRD3L3DH20C5W43B/14663331)     | $2.31      | 44lm   |  ----------- |
 | [White](https://www.digikey.com/en/products/detail/creeled-inc/CLV1A-FKB-CK1VW1DE1BB7C3C3/7907693) | $0.42 | 39lm |  ----------- |
 | **Total**  | $2.73        |  ----------- |  ----------- |
 
