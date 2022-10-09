@@ -23,7 +23,7 @@ UV LEDs have shown to both be costly and emit low levels of light. As such, give
 
 | LED      | Cost | Intensity | Comments |
 | ----------- | ----------- |  ----------- |  ----------- |
-| [White](https://www.digikey.com/en/products/detail/creeled-inc/CLV1A-FKB-CK1VW1DE1BB7C3C3/7907693) | $0.42 | 39lm |  ----------- |
+| [White](https://www.digikey.com/en/products/detail/samsung-semiconductor-inc/SPMWHD32AMH5XAU5SL/12083566) | $0.42 | 39lm |  ----------- |
 | **Total**  | $0.42        |  ----------- |  ----------- |
 
 New current limiting resistors had to be selected as follows:
