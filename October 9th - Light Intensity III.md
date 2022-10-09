@@ -32,4 +32,10 @@ New current limiting resistors had to be selected as follows:
 | White | 2.75V |  65mA |  34.62 ohms | [34.8 ohms](https://www.digikey.com/en/products/detail/yageo/RC1206FR-0734R8L/728828) |$0.10|
 | **Total** | ----------- |  ----------- |  ----------- |----------- | $0.21 |
 
+The resistors to limit the base current drawn from the microcontrollers changed as follows:
 
+| Component      |Quantity |Price|Comment|
+| ----------- | ----------- |  ----------- |   ----------- |  
+| [NPN transistors](https://www.digikey.com/en/products/detail/onsemi/MMBT2222AM3T5G/2050501) |1 |    $0.23| Transistors for switching |
+| [2.37kΩ resistor](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF1206FG2K37/1758792) | 1 |   $0.10 |  Base Resistor for switching LEDs  |  
+|**Total**|-------|$0.33||
