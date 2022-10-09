@@ -7,3 +7,4 @@ Following the light standard determined previously, our design has 3 objectives,
 2. 750+ (8,070 lm) foot-candles  for medium light plants
 3. 1000+ (10,760) foot-candles for high light plants
 
+The success of our design relies on at minimum attaining the first objective
