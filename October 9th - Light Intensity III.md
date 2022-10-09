@@ -28,9 +28,13 @@ UV LEDs have shown to both be costly and emit low levels of light. As such, give
 
 To accomodate the white LED, VDD will have to be above the forward voltage of 5.5V. When selecting the corresponding AC/DC converter, the power rating will have to be above the power consumed by the LEDs. 
 To meet each objective, there must be:
-1. 9 white LEDs, 1.6W
-2. 41 white LEDs, 7.31W
-3. 54 white LEDs, 9.62W
+
+|Objective |  Number of LEDs      | Power|  Comments |
+| ----------- | ----------- |  ----------- |  ----------- |
+| Low-Light | 9 |  1.6W |  ----------- |
+| Mid-Light | 41 |  7.31W |  ----------- |
+| High-Light | 54 |  9.62W |  ----------- |
+
 
 
 New current limiting resistors had to be selected as follows:
