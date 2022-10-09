@@ -29,4 +29,4 @@ Following this [tutorial](https://actionservicesgroup.com/blog/lighting-measurem
 Ω = 2π(1−cos(α/2)) where α is the viewing angle
 Ω = π steradians
 
-Then 2.72 cd * π steradians = 8.55 lumens
+Then 2.72 cd * π steradians = 8.55 lumens per grow light
