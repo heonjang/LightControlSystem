@@ -31,4 +31,4 @@ Following this [tutorial](https://actionservicesgroup.com/blog/lighting-measurem
 
 Then 2.72 cd * π steradians = 8.55 lumens per grow light.
 
-For $100, we will provide 462 lumens of light or 43 foot-candles, which is barely enough light for a low light plant.
+For $100, we will provide 462 lumens of light
