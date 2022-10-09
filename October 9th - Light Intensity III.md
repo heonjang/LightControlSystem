@@ -29,20 +29,20 @@ UV LEDs have shown to both be costly and emit low levels of light. As such, give
 To accomodate the white LED, VDD will have to be above the forward voltage of 5.5V. When selecting the corresponding AC/DC converter, the power rating will have to be above the power consumed by the LEDs. 
 To meet each objective, there must be:
 
-|Objective |  Number of LEDs      | Power|  Comments |
+|Objective |  Number of LEDs      | Power|  Current| Comments |
 | ----------- | ----------- |  ----------- |  ----------- |
-| Low-Light | 9 |  8.91W |  ----------- |
-| Mid-Light | 41 |  40.59W |  ----------- |
-| High-Light | 54 |  53.46W |  ----------- |
+| Low-Light | 9 |  8.91W | 1.62A |  ----------- |
+| Mid-Light | 41 |  40.59W | 7.31A |  ----------- |
+| High-Light | 54 |  53.46W | 9.72A |  ----------- |
 
+The current draw and power dissipated by the LEDs places significant restrictions on the AC/DC converter. Preliminary research has led to the possibility of using a 12V 15A 180W rated [power supply](https://www.amazon.com/ALITOVE-Transformer-Switching-Converter-Security/dp/B078RZ6C3N/ref=asc_df_B078RZ6C3N/?tag=hyprod-20&linkCode=df0&hvadid=242045434535&hvpos=&hvnetw=g&hvrand=6506752645919981557&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9022196&hvtargid=pla-418440784733&th=1).
 
-
-New current limiting resistors had to be selected as follows:
+Assuming the use of a 12V power supply, new current limiting resistors were selected as follows:
 
 | LED      | V_on | Desired I | Corresponding Resistor |Final Resistor Choice |Cost |
 | ----------- | ----------- |  ----------- |  ----------- |----------- | ----------- |
-| White | 5.55V |  180mA |  34.62 ohms | [34.8 ohms](https://www.digikey.com/en/products/detail/yageo/RC1206FR-0734R8L/728828) |$0.10|
-| **Total** | ----------- |  ----------- |  ----------- |----------- | $0.10 |
+| White | 5.55V |  180mA |  35.83 ohms | [36 ohms](https://www.digikey.com/en/products/detail/te-connectivity-passive-product/352136RFT/4279934) |$0.59|
+| **Total** | ----------- |  ----------- |  ----------- |----------- | $0.59 |
 
 
 Due to the reduction and change of types of LEDs, the grow light module needs to be restructured. Mainly, the transistors have a maximum collector current of 600mA. This opens the door to having up to 9 white LEDs per module. For the sake of adjustability, each module should be moderately bright or even low brightness. This led to the design choice of 8 LEDs per module. As a result, each module would have approximately 320 lumens of light, 
