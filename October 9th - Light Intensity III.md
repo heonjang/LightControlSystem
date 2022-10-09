@@ -20,6 +20,11 @@ The following plot taken from the datasheet shows the relative intensity vs wave
 
 UV LEDs have shown to both be costly and emit low levels of light. As such, given budget constraints, it would be better to replace these with another more cost effective LED. In particular, far red light is another beneficial wavelength of light to plant growth (see [here](https://lightsciencetech.com/visible-wavelength-range-plant-growth/#:~:text=610-700%20nm%20is%20considered,plant%20growth%20and%20optimised%20yield)). Following this line of reasoning, the UV LED could be replaced with a far red LED.
 
+
+![image](https://user-images.githubusercontent.com/55333859/194779626-459ce3a7-336c-4029-bf87-956f573abb37.png)
+
+UV LEDs have shown to both be costly and emit low levels of light. As such, given budget constraints, it would be better to replace these with another more cost effective LED. In particular, far red light is another beneficial wavelength of light to plant growth (see [here](https://lightsciencetech.com/visible-wavelength-range-plant-growth/#:~:text=610-700%20nm%20is%20considered,plant%20growth%20and%20optimised%20yield)). Following this line of reasoning, the UV LED could be replaced with a far red LED.
+
 | LED      | Cost | Intensity | Comments |
 | ----------- | ----------- |  ----------- |  ----------- |
 | [Red](https://www.digikey.com/en/products/detail/creeled-inc/XPEEPR-L1-0000-00901/6817679)     | $1.20      |   |  ----------- |
