@@ -31,9 +31,9 @@ To meet each objective, there must be:
 
 |Objective |  Number of LEDs      | Power|  Comments |
 | ----------- | ----------- |  ----------- |  ----------- |
-| Low-Light | 9 |  1.6W |  ----------- |
-| Mid-Light | 41 |  7.31W |  ----------- |
-| High-Light | 54 |  9.62W |  ----------- |
+| Low-Light | 9 |  8.91W |  ----------- |
+| Mid-Light | 41 |  40.59W |  ----------- |
+| High-Light | 54 |  53.46W |  ----------- |
 
 
 
