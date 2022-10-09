@@ -22,7 +22,7 @@ UV LEDs have shown to both be costly and emit low levels of light. As such, give
 
 | LED      | Cost | Intensity | Comments |
 | ----------- | ----------- |  ----------- |  ----------- |
-| [UV](https://www.mouser.com/ProductDetail/Kingbright/AA3528VRVFS-A?qs=rY7msk5yxfb63mh907EyRA%3D%3D) (315-400 nm)     | $0.67      |  250mcd |  ----------- |
+| [Red](https://www.digikey.com/en/products/detail/creeled-inc/XPEEPR-L1-0000-00901/6817679)     | $1.20      |  250mcd |  ----------- |
 | [White](https://www.digikey.com/en/products/detail/creeled-inc/CLV1A-FKB-CK1VW1DE1BB7C3C3/7907693) | $0.42 | 39lm |  ----------- |
 | **Total**  | $1.09        |  ----------- |  ----------- |
 
