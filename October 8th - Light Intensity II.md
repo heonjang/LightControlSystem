@@ -34,4 +34,4 @@ Then 2.72 cd * π steradians = 8.55 lumens per grow light.
 For $100, we will provide 462 lumens of light. This is not enough light for our implementation.
 
 
-**_To be continued in Light Intensity III_**
+**_To be continued in [Light Intensity III](https://github.com/heonjang/LightControlSystem/blob/Christelle/October%209th%20-%20Light%20Intensity%20III.md)_**
