@@ -18,18 +18,14 @@ The following plot taken from the datasheet shows the relative intensity vs wave
 
 ![image](https://user-images.githubusercontent.com/55333859/194769328-9ac41cc9-1e05-4a55-9aa4-649f6a0ed990.png)
 
-UV LEDs have shown to both be costly and emit low levels of light. As such, given budget constraints, it would be better to replace these with another more cost effective LED. In particular, far red light is another beneficial wavelength of light to plant growth (see [here](https://lightsciencetech.com/visible-wavelength-range-plant-growth/#:~:text=610-700%20nm%20is%20considered,plant%20growth%20and%20optimised%20yield)). Following this line of reasoning, the UV LED could be replaced with a far red LED.
-
-
-![image](https://user-images.githubusercontent.com/55333859/194779626-459ce3a7-336c-4029-bf87-956f573abb37.png)
 
 UV LEDs have shown to both be costly and emit low levels of light. As such, given budget constraints, it would be better to replace these with another more cost effective LED. In particular, far red light is another beneficial wavelength of light to plant growth (see [here](https://lightsciencetech.com/visible-wavelength-range-plant-growth/#:~:text=610-700%20nm%20is%20considered,plant%20growth%20and%20optimised%20yield)). Following this line of reasoning, the UV LED could be replaced with a far red LED.
 
 | LED      | Cost | Intensity | Comments |
 | ----------- | ----------- |  ----------- |  ----------- |
-| [Red](https://www.digikey.com/en/products/detail/creeled-inc/XPEEPR-L1-0000-00901/6817679)     | $1.20      |   |  ----------- |
+| [Red](https://www.digikey.com/en/products/detail/samsung-semiconductor-inc/SPHRD3L3DH20C5W43B/14663331)     | $2.31      |   |  ----------- |
 | [White](https://www.digikey.com/en/products/detail/creeled-inc/CLV1A-FKB-CK1VW1DE1BB7C3C3/7907693) | $0.42 | 39lm |  ----------- |
-| **Total**  | $1.09        |  ----------- |  ----------- |
+| **Total**  | $2.73        |  ----------- |  ----------- |
 
 New current limiting resistors had to be selected as follows:
 
