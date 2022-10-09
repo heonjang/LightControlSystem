@@ -22,3 +22,11 @@ The datasheet of the both the RGB and UV LEDs, provide graphs of luminous intens
 ![image](https://user-images.githubusercontent.com/55333859/194732379-a41d7f7c-9434-43a0-a963-6f38e6b423af.png)
 
 ![image](https://user-images.githubusercontent.com/55333859/194732904-75807c24-6e40-408b-958c-d50f1a10466f.png)
+
+The folllowing equation can be used to convert candela to lumens: 1cd = 1lm / sr
+
+Following this [tutorial](https://actionservicesgroup.com/blog/lighting-measurements-an-in-depth-guide-part-1/#:~:text=The%20full%20equation%20to%20find,cos%20(apex%20angle%2F2)):
+Ω = 2π(1−cos(α/2)) where α is the viewing angle
+Ω = π steradians
+
+Then 2.72 cd * π steradians = 8.55 lumens
