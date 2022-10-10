@@ -10,3 +10,6 @@ The LTSpice circuit and resulting simulation is shown below
 ![image](https://user-images.githubusercontent.com/55333859/194902398-2b44e802-6a90-4273-8df6-b0be4bb1b5e0.png)
  
  The collector current is not the 540mA expected from the 3 diodes. The main issue being the DC current gain is not 100, instead it is around 80. 
+ The datasheet confirms the simulations
+ ![image](https://user-images.githubusercontent.com/55333859/194902812-cc294132-bde0-4a6b-9494-d64bdd7b60c7.png)
+
