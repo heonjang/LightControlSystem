@@ -21,4 +21,4 @@ Consequently, it would be better to return to one transistor per LED for a more 
 
 ![image](https://user-images.githubusercontent.com/55333859/194919317-978ace5e-0003-4a4d-b35c-3f6287b08a57.png)
 
-All three LEDs have a saturation current close to 180mA as expected. [Arrays](https://www.digikey.com/en/products/detail/onsemi/MBT2222ADW1T1G/1477281) of transistor will be used as they are roughly the same price as a singular transistor.
+All three LEDs have a saturation current close to 180mA as expected. [Arrays](https://www.digikey.com/en/products/detail/onsemi/MBT2222ADW1T1G/1477281) of transistors will be used as they are roughly the same price as a singular transistor and share the same properties.
