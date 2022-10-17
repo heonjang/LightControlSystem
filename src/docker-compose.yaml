@@ -1,0 +1,22 @@
+version: "3"
+services:
+  backend:
+    container_name: lcs-server
+    image: light-control-system
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "8000:8000"
+  
+  db:
+    container_name: lcs-postgres
+    image: postgres:14.1-alpine
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - '5432:5432'
+
