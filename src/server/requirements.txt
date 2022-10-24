@@ -1,6 +1,7 @@
 Django==4.1.2
 djangorestframework
 django-filter
+django-q
 markdown
 psycopg2
 requests
