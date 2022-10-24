@@ -11,25 +11,25 @@ def time_in_seconds(t: datetime.time) -> int:
 
 
 # This calculator will create a desired graph to offer average illumination of
-# `target_average_illummination` from sun_rise to sun_set
+# `target_average_illummination` from sunrise to sunset
 # In order to maximize the efficiency, it will try to follow the Sun's solar isolation trend.
 # The caculator will first calculate what would the trend be like if sun offers
-# the average illumination of `target_average_illummination` betweeb sun_rise and sun_set
+# the average illumination of `target_average_illummination` betweeb sunrise and sunset
 # Then, it will calculate the difference between the actual illumination and the optimal illumination
 # Solar Insolation function: F = F0 * cos(theta): https://sciencing.com/calculate-solar-insolation-8435082.html
 class DefaultCalculator:
-    SUN_RISE_ANGLE = -180
-    SUN_SET_ANGLE = 180
+    SUNRISE_ANGLE = -180
+    SUNSET_ANGLE = 180
 
     def __init__(
         self,
         target_average_illumination: int,
-        sun_rise: datetime.time,
-        sun_set: datetime.time,
+        sunrise: datetime.time,
+        sunset: datetime.time,
         period_in_seconds: int = 1,
     ) -> None:
-        self.sun_rise = sun_rise
-        self.sun_set = sun_set
+        self.sunrise = sunrise
+        self.sunset = sunset
         self.target_average_illumination = target_average_illumination
         self.period_in_seconds = period_in_seconds
 
@@ -39,9 +39,7 @@ class DefaultCalculator:
         return self.target_average_illumination * self.total_number_of_points()
 
     def angle_change_with_one_point(self):
-        return (
-            self.SUN_SET_ANGLE - self.SUN_RISE_ANGLE
-        ) / self.total_number_of_points()
+        return (self.SUNSET_ANGLE - self.SUNRISE_ANGLE) / self.total_number_of_points()
 
     def points_difference(self, t1: datetime.time, t2: datetime.time):
         seconds_difference = time_in_seconds(t2) - time_in_seconds(t1)
@@ -49,24 +47,24 @@ class DefaultCalculator:
         return int(seconds_difference / self.period_in_seconds)
 
     def total_number_of_points(self):
-        return self.points_difference(self.sun_rise, self.sun_set)
+        return self.points_difference(self.sunrise, self.sunset)
 
     def angle_at_one_point(self, t: datetime.time):
-        if t < self.sun_rise:
-            raise ValueError
-        if t > self.sun_set:
-            raise ValueError
+        if t < self.sunrise:
+            return self.SUNRISE_ANGLE
+        if t > self.sunset:
+            return self.SUNSET_ANGLE
 
-        points_after_sun_rise = self.points_difference(self.sun_rise, t)
+        points_after_sunrise = self.points_difference(self.sunrise, t)
 
         return (
-            self.SUN_RISE_ANGLE
-            + points_after_sun_rise * self.angle_change_with_one_point()
+            self.SUNRISE_ANGLE
+            + points_after_sunrise * self.angle_change_with_one_point()
         )
 
     def calculate_f0(self):
         angles = (
-            self.SUN_SET_ANGLE + self.angle_change_with_one_point() * i
+            self.SUNSET_ANGLE + self.angle_change_with_one_point() * i
             for i in range(self.total_number_of_points())
         )
         cosine_sum = sum(math.cos(math.radians(angle)) + 1 for angle in angles)
@@ -79,13 +77,13 @@ class DefaultCalculator:
         return self.f0 * (math.cos(math.radians(angle)) + 1)
 
     def get_all_target_illumination(self):
-        sun_rise = datetime.datetime.combine(datetime.date.today(), self.sun_rise)
-        sun_set = datetime.datetime.combine(datetime.date.today(), self.sun_set)
-        current = sun_rise
+        sunrise = datetime.datetime.combine(datetime.date.today(), self.sunrise)
+        sunset = datetime.datetime.combine(datetime.date.today(), self.sunset)
+        current = sunrise
 
         targets = {}
 
-        while current < sun_set:
+        while current < sunset:
             t = current.time()
             targets[t] = self.calculate_target_illumination(t)
             current += datetime.timedelta(seconds=self.period_in_seconds)
@@ -95,12 +93,12 @@ class DefaultCalculator:
 
 if __name__ == "__main__":
     target_average_illumination = 100
-    sun_rise = datetime.time(8, 0, 0)
-    sun_set = datetime.time(19, 0, 0)
+    sunrise = datetime.time(8, 0, 0)
+    sunset = datetime.time(19, 0, 0)
     period_in_seconds = 60
 
     calculator = DefaultCalculator(
-        target_average_illumination, sun_rise, sun_set, period_in_seconds
+        target_average_illumination, sunrise, sunset, period_in_seconds
     )
 
     targets = calculator.get_all_target_illumination()

@@ -5,12 +5,12 @@ from configuration.calculator.default import DefaultCalculator
 
 def test1():
     target_average_illumination = 100
-    sun_rise = datetime.time(8, 0, 0)
-    sun_set = datetime.time(19, 0, 0)
+    sunrise = datetime.time(8, 0, 0)
+    sunset = datetime.time(19, 0, 0)
     period_in_seconds = 60
 
     calculator = DefaultCalculator(
-        target_average_illumination, sun_rise, sun_set, period_in_seconds
+        target_average_illumination, sunrise, sunset, period_in_seconds
     )
 
     targets = calculator.get_all_target_illumination()
@@ -26,12 +26,12 @@ def test1():
 
 def test2():
     target_average_illumination = 100
-    sun_rise = datetime.time(8, 0, 0)
-    sun_set = datetime.time(19, 0, 0)
+    sunrise = datetime.time(8, 0, 0)
+    sunset = datetime.time(19, 0, 0)
     period_in_seconds = 1
 
     calculator = DefaultCalculator(
-        target_average_illumination, sun_rise, sun_set, period_in_seconds
+        target_average_illumination, sunrise, sunset, period_in_seconds
     )
 
     targets = calculator.get_all_target_illumination()
