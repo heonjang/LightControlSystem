@@ -4,7 +4,7 @@ from django.db.models import Avg
 
 class LightIntensityPoint(models.Model):
     sensor = models.CharField(db_index=True, max_length=20)
-    datetime = models.DateTimeField(auto_now_add=True, db_index=True, null=False)
+    datetime = models.DateTimeField(db_index=True, null=False)
     value = models.FloatField(null=False)
 
     def __str__(self):
@@ -18,4 +18,4 @@ class LightIntensityPoint(models.Model):
             sensor=sensor, datetime__gte=dt_gte, datetime__lte=dt_lte
         ).aggregate(Avg("value"))
 
-        return qs["value__avg"]
+        return qs["value__avg"] or 0

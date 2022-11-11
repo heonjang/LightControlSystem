@@ -9,8 +9,8 @@ services:
       - POSTGRES_PASSWORD=postgres
     volumes:
       - .:/code
-    depends_on:
-      - redis
+    # depends_on:
+    #   - redis
     ports:
       - "8000:8000"
   
@@ -24,21 +24,21 @@ services:
     ports:
       - '5432:5432'
 
-  redis:
-    container_name: redis
-    image: redis:alpine
-    ports:
-      - 6379:6379
+  # redis:
+  #   container_name: redis
+  #   image: redis:alpine
+  #   ports:
+  #     - 6379:6379
   
-  django-q:
-    container_name: django-q
-    image: django-q
-    environment:
-      - POSTGRES_NAME=postgres
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-    volumes:
-      - .:/code
-    depends_on:
-      - redis
+  # django-q:
+  #   container_name: django-q
+  #   image: django-q
+  #   environment:
+  #     - POSTGRES_NAME=postgres
+  #     - POSTGRES_USER=postgres
+  #     - POSTGRES_PASSWORD=postgres
+  #   volumes:
+  #     - .:/code
+  #   depends_on:
+  #     - redis
 
