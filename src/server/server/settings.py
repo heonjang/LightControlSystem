@@ -35,6 +35,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     "analyzer",
     "configuration",
+    "decision",
     "rest_framework",
     "data",
     "django_q",
