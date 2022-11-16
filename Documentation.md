@@ -28,3 +28,6 @@ To program the ESP32:
 6. Once "connectinng" displays on the terminal release the Boot button
 7. It may be necessary to reset the board after uploading code
 
+The Arduino IDE has a wifi scan example and it worked as expected:
+
+![image](https://user-images.githubusercontent.com/55333859/202201779-72d5fc02-a666-4ae5-a83e-04dba7417410.png)
