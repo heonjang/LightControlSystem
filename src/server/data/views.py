@@ -19,7 +19,7 @@ class LightIntensityPointViewSet(viewsets.ModelViewSet):
 
     @action(detail=True, methods=["get"])
     def points(self, request, pk: str):
-        points = self.queryset.filter(sensor=pk).order_by("time")
+        points = self.queryset.filter(sensor=pk).order_by("datetime")
 
         json = self.serializer_class(points, many=True)
         return Response(json.data)

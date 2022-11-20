@@ -6,4 +6,4 @@ from data.models import LightIntensityPoint
 class LightIntensityPointSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = LightIntensityPoint
-        fields = ["sensor", "time", "value"]
+        fields = ["sensor", "datetime", "value"]
