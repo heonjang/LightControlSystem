@@ -19,3 +19,7 @@ Procedure
 
 
 The good thing about cloud run is that it is a serverless service. Meaning, as long as we deploy the app, the GCP will take care of recoverying and scaling.
+
+
+# Progress
+The deployment to the GCP was successful and the server now runs in https://light-control-system-z2wzushc7q-uc.a.run.app/
