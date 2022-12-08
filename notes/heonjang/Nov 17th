@@ -1,0 +1,16 @@
+The frontend will cosists of 4 different tabs.
+
+#  1. Home
+On this page, the server shows the current configuration of the system to the user. Therefore, the user does not need to actually see the greenhouse system in person to check its current status.
+
+
+#  2. System Configuration
+On this page, the user can update the current status of the system, and the update is immediately applied so that the target illumination changes correspondingly.
+
+
+#  3. Remote Controller
+In this page, the user can directly control the system remotely. 
+
+
+#  4. History
+On this page, the user can see the history of the light intensity stored in the system, Through this, the user can know whether the system is behaving as intended or not.
