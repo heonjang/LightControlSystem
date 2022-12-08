@@ -2,6 +2,10 @@ In this note, I am going to talk about Frontend
 
 
 
+<img width="308" alt="Screen Shot 2022-12-08 at 4 17 17 PM" src="https://user-images.githubusercontent.com/103418311/206582510-d1899629-f10a-4c9e-b6c9-dba51550ccaf.png">
+
+
+
 For this project's frontend, we will use React.
 
 The reason why we decided to use React is because
