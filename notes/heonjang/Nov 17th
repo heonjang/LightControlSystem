@@ -1,6 +1,7 @@
 The frontend will cosists of 4 different tabs.
 
 #  1. Home
+
 On this page, the server shows the current configuration of the system to the user. Therefore, the user does not need to actually see the greenhouse system in person to check its current status.
 
 
