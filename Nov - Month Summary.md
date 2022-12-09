@@ -1,4 +1,5 @@
 # Design Updates
+The majority of the month of November was dedicating to soldering and assembling the prototype. Below is a summary of the key changes made during this time period
 
 ## Microcontroller
 The microcontroller acts as a wireless access point. Mainly, any device, (phone or computer) can connect to the ESP32 access point.
