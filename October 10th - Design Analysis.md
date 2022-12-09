@@ -11,7 +11,7 @@ The LTSpice circuit and resulting simulation is shown below
  
  The collector current is not the 540mA expected from the 3 diodes. 
  The main issue being the DC current gain is not 100, instead it is around 80. 
- The datasheet confirms the simulations, right around 200mA the DC current gain begins to drop. It is crucial that the current through the LEDs is as close to 180mA as possible, otherwise the brightness of the LEDs will not be t
+ The datasheet confirms the simulations, right around 200mA the DC current gain begins to drop. It is crucial that the current through the LEDs is as close to 180mA as possible, otherwise the brightness of the LEDs will not be correct
  ![image](https://user-images.githubusercontent.com/55333859/194902812-cc294132-bde0-4a6b-9494-d64bdd7b60c7.png)
 
 Consequently, it would be better to return to one transistor per LED for a more consistent current gain. Additionally, the 36 ohm resistors can be switched out for [this](https://www.digikey.com/en/products/detail/te-connectivity-passive-product/354012RJT/9926985) 12 ohm resistor. To validate these results, the new design was simulated in LTspice.
