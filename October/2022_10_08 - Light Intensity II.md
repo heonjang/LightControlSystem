@@ -3,9 +3,9 @@
 Currently the fundamental design question needs to be answered: _How much light can and should be provided by our design?_
 
 ## Design Analysis
-Referring to the final LED choice described in [the journal entry from October 7th](https://github.com/heonjang/LightControlSystem/blob/Christelle/October%207th%20-%20General.md), each grow light module will provide 2.72 cd. Candela is the intensity illuminated along a line 0 degrees from the LED. Since our main concern is how much light our design for an area of plants, the candela unit is not sufficient. The following page will walk through using the units of candela to determine the illuminance on a square foot of area.
+Referring to the final LED choice described in [the journal entry from October 7th](https://github.com/heonjang/LightControlSystem/blob/Christelle/October/2022_10_07%20-%20General.md), each grow light module will provide 2.72 cd. Candela is the intensity illuminated along a line 0 degrees from the LED. Since our main concern is how much light our design for an area of plants, the candela unit is not sufficient. The following page will walk through using the units of candela to determine the illuminance on a square foot of area.
 
-[Previously](https://github.com/heonjang/LightControlSystem/blob/Christelle/October%202nd%20-%20Light%20Intensity.md), it was determined that to best accomodate all types of plants, our prototype should provide 1000+ foot-candles of light.
+[Previously](https://github.com/heonjang/LightControlSystem/blob/Christelle/October/2022_10_02%20-%20Light%20Intensity.md), it was determined that to best accomodate all types of plants, our prototype should provide 1000+ foot-candles of light.
 
 ### Units of Light Intensity
 A foot-candle is [defined as](https://www.studiobinder.com/blog/what-is-a-foot-candle-definition/) "the amount of light that falls on a surface that is 1 foot away from a singular candle". The following diagrams illustrate common standards of light illuminance
@@ -34,4 +34,4 @@ Then 2.72 cd * π steradians = 8.55 lumens per grow light.
 For $100, we will provide 462 lumens of light. This is not enough light for our implementation.
 
 
-**_To be continued in [Light Intensity III](https://github.com/heonjang/LightControlSystem/blob/Christelle/October%209th%20-%20Light%20Intensity%20III.md)_**
+**_To be continued in [Light Intensity III](https://github.com/heonjang/LightControlSystem/blob/Christelle/October/2022_10_09%20-%20Light%20Intensity%20III.md)_**
