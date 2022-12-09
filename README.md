@@ -10,6 +10,9 @@
 9. [2022_10_06 - Transistors](https://github.com/heonjang/LightControlSystem/edit/Christelle/README.md#2022_10_06---transistors)
 10. [2022_10_07 - General](https://github.com/heonjang/LightControlSystem/edit/Christelle/README.md#2022_10_07---general)
 11. [2022_10_08 - Light Intensity II](https://github.com/heonjang/LightControlSystem/edit/Christelle/README.md#2022_10_08---light-intensity-ii)
+12. [2022_10_09 - Light Intensity III](https://github.com/heonjang/LightControlSystem/edit/Christelle/README.md#2022_10_09---light-intensity-iii)
+13. [2022_10_10 - Board Considerations and Design Analysis](https://github.com/heonjang/LightControlSystem/edit/Christelle/README.md#2022_10_10---board-considerations-and-design-analysis)
+14. [2022_10_24 - Breadboarding](https://github.com/heonjang/LightControlSystem/edit/Christelle/README.md#2022_10_24---breadboarding)
 
 
 
@@ -314,3 +317,126 @@ For $100, we will provide 462 lumens of light. This is not enough light for our 
 
 **_To be continued in [Light Intensity III](https://github.com/heonjang/LightControlSystem/blob/Christelle/October/2022_10_09%20-%20Light%20Intensity%20III.md)_**
 
+## 2022_10_09 - Light Intensity III
+
+The [Light Intensity II](https://github.com/heonjang/LightControlSystem/blob/Christelle/October/2022_10_08%20-%20Light%20Intensity%20II.md) entry, revealed a key shortcoming from our final design, not enough lumens were provided.
+
+Following the light standard determined previously, our design has 3 objectives, to provide:
+1. between 50 (538lm) and 250 foot-candles (2690 lm) for low light plants
+2. 750+ (8,070 lm) foot-candles for medium light plants
+3. 1000+ (10,760) foot-candles for high light plants
+
+The success of our design relies on at minimum attaining the first objective.
+
+The previous selection of LEDs failed to provide enough lumens. As such these will have to be reselected.
+
+### Reselecting LEDs
+The RGB LED from before can be replaced by a white light LED. In particular, [this LED](https://www.digikey.com/en/products/detail/ams-osram-usa-inc/GW-P9LR35-PM-M2M3-XX57-1-180-R18/9641611) was selected for its high lumen output and price.
+
+The following plot taken from the datasheet shows the relative intensity vs wavelength. Notably, the LED will provide a combination of red, green and blue light. The blue light is the dominant wavelength, followed by red then green. 
+
+![image](https://user-images.githubusercontent.com/55333859/194781914-64680adb-7ed1-4217-987a-64310fec482a.png)
+
+UV LEDs have shown to both be costly and emit low levels of light. As such, given budget constraints, it would be better to replace these with another more cost effective LED. In particular, the white LED alone should be sufficient. Mainly, the combination of red, green and blue are all beneficial to plant growth (see [here](https://lightsciencetech.com/visible-wavelength-range-plant-growth/#:~:text=610-700%20nm%20is%20considered,plant%20growth%20and%20optimised%20yield)). On a higher budget, UVA or far red LEDs could be added to further supplement the light to the plant.
+
+| LED      | Cost | Intensity | Comments |
+| ----------- | ----------- |  ----------- |  ----------- |
+| [White](https://www.digikey.com/en/products/detail/ams-osram-usa-inc/GW-P9LR35-PM-M2M3-XX57-1-180-R18/9641611) | $1.00 | 200lm |  ----------- |
+| **Total**  | $1        |  ----------- |  ----------- |
+
+
+To accomodate the white LED, VDD will have to be above the forward voltage of 5.5V. When selecting the corresponding AC/DC converter, the power rating will have to be above the power consumed by the LEDs. 
+To meet each objective, there must be:
+
+|Objective |  Number of Modules      | Power|  Current| Comments |
+| ----------- | ----------- |  ----------- |  ----------- | ----------- |
+| Low-Light | 9 |  8.91W | 1.62A |  ----------- |
+| Mid-Light | 41 |  40.59W | 7.31A |  ----------- |
+| High-Light | 54 |  53.46W | 9.72A |  ----------- |
+
+The current draw and power dissipated by the LEDs places significant restrictions on the AC/DC converter. Preliminary research has led to the possibility of using a 12V 15A 180W rated [power supply](https://www.amazon.com/ALITOVE-Transformer-Switching-Converter-Security/dp/B078RZ6C3N/ref=asc_df_B078RZ6C3N/?tag=hyprod-20&linkCode=df0&hvadid=242045434535&hvpos=&hvnetw=g&hvrand=6506752645919981557&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9022196&hvtargid=pla-418440784733&th=1).
+
+Assuming the use of a 12V power supply, new current limiting resistors were selected as follows:
+
+| LED      | V_on | Desired I | Corresponding Resistor |Final Resistor Choice |Cost |
+| ----------- | ----------- |  ----------- |  ----------- |----------- | ----------- |
+| White | 5.55V |  180mA |  35.83 ohms | [36 ohms](https://www.digikey.com/en/products/detail/te-connectivity-passive-product/352136RFT/4279934) |$0.59|
+| **Total** | ----------- |  ----------- |  ----------- |----------- | $0.59 |
+
+
+Due to the reduction and change of types of LEDs, the grow light module needs to be restructured. Mainly, the transistors have a maximum collector current of 600mA. This opens the door to having 3 white LEDs per module. The choice of 3 LEDs would lead to each module having 55 foot-candles, which is a decent amount of light. With no significant downside to having 3 LEDs to module, there will be 18 modules each with 3 LEDs.
+
+The resistors to limit the base current drawn from the microcontrollers changed as follows:
+
+| Component      |Quantity |Price|Comment|
+| ----------- | ----------- |  ----------- |   ----------- |  
+| [NPN transistors](https://www.digikey.com/en/products/detail/onsemi/MMBT2222AM3T5G/2050501) |1 |    $0.23| Transistors for switching |
+| [374Ω resistor](https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-6ENF3740V/111199) | 1 |   $0.10 |  Base Resistor for switching LEDs  |  
+|**Total**|-------|$0.33||
+
+## 2022_10_10 - Board Considerations and Design Analysis
+
+Due to restrictions on PCB orders in ECE 445, our design will shift to consist of one PCB with a single microcontroller that controls the lights, motor and photosensor. 
+Connectors and wires will connect each component to the control PCB. There are a few major considerations left still.
+
+### Power
+The [recent changes](https://github.com/heonjang/LightControlSystem/blob/Christelle/October/2022_10_09%20-%20Light%20Intensity%20III.md) to the design changed this project from a low power to mid power design. As such, the power supply will have to be capable of handling the 60 Watts of power dissipated by the LEDs at full light as well as by other design components. The following [power supply 
+](https://www.amazon.com/ALITOVE-100-240V-Converter-Transformer-5-5x2-1mm/dp/B07MXXXBV8/ref=sxin_15_pa_sp_search_thematic_sspa?content-id=amzn1.sym.6b029eb3-7d41-4744-b45d-69fe835e098d%3Aamzn1.sym.6b029eb3-7d41-4744-b45d-69fe835e098d&cv_ct_cx=12v+15+amp+power+supply&keywords=12v+15+amp+power+supply&pd_rd_i=B07MXXXBV8&pd_rd_r=39865509-9d64-417a-bc5e-366efbf2829f&pd_rd_w=7I11j&pd_rd_wg=hmNNq&pf_rd_p=6b029eb3-7d41-4744-b45d-69fe835e098d&pf_rd_r=CDZPZD2ZX2RHV2VJX3BZ&qid=1665428790&qu=eyJxc2MiOiI0LjE4IiwicXNhIjoiMy44MCIsInFzcCI6IjMuMDcifQ%3D%3D&sr=1-3-a73d1c8c-2fd2-4f19-aa41-2df022bcb241-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzNVJHS0xON1lYRzZDJmVuY3J5cHRlZElkPUEwMTAzNTA3MzlGSDhHRFo4WlFVNyZlbmNyeXB0ZWRBZElkPUEwMjgyMTM3MkFFNzJJQk1aMUxJWiZ3aWRnZXROYW1lPXNwX3NlYXJjaF90aGVtYXRpYyZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=) was selected as it has a high power rating as well as a nominal voltage rating of 12V. The design is well below the recommended maximum of 96W designs. 
+
+This 12V will then be stepped down to 3.3V for the microcontroller as well as the motor. Using the TI Instruments [webench](https://webench.ti.com/) application as well as verifying the results with the schematic, the [TPS565208](https://www.digikey.com/en/products/detail/texas-instruments/TPS565208DDCR/7776393) was selected.
+
+### Simulations
+The design was simulated using [the model](https://www.osram.com/apps/downloadcenter/os/?path=%2Fos-files%2FElectrical+Simulation%2FLED%2FDURIS%2FDURIS_S%2FDURIS_S_8%2FGW_P9LR35.PM%2F) provided by OSRAM.
+The LTSpice circuit and resulting simulation is shown below
+
+![image](https://user-images.githubusercontent.com/55333859/194899698-8ca9d2c6-0268-4392-b4b9-462c2a01cac8.png)
+
+
+![image](https://user-images.githubusercontent.com/55333859/194902398-2b44e802-6a90-4273-8df6-b0be4bb1b5e0.png)
+ 
+ The collector current is not the 540mA expected from the 3 diodes. 
+ The main issue being the DC current gain is not 100, instead it is around 80. 
+ The datasheet confirms the simulations, right around 200mA the DC current gain begins to drop. It is crucial that the current through the LEDs is as close to 180mA as possible, otherwise the brightness of the LEDs will not be correct
+ ![image](https://user-images.githubusercontent.com/55333859/194902812-cc294132-bde0-4a6b-9494-d64bdd7b60c7.png)
+
+Consequently, it would be better to return to one transistor per LED for a more consistent current gain. Additionally, the 36 ohm resistors can be switched out for [this](https://www.digikey.com/en/products/detail/te-connectivity-passive-product/354012RJT/9926985) 12 ohm resistor. To validate these results, the new design was simulated in LTspice.
+
+![image](https://user-images.githubusercontent.com/55333859/194919436-ddd3d25b-471e-42ef-912d-3d02eb136df2.png)
+
+
+![image](https://user-images.githubusercontent.com/55333859/194919317-978ace5e-0003-4a4d-b35c-3f6287b08a57.png)
+
+All three LEDs have a saturation current close to 180mA as expected. [Arrays](https://www.digikey.com/en/products/detail/onsemi/MBT2222ADW1T1G/1477281) of transistors will be used as they are roughly the same price as a singular transistor and share the same properties.
+
+## 2022_10_24 - Breadboarding
+
+### Breadboard Circuit
+Since the switching circuit for the LEDs is such a significant portion of this project, a simple breadboard model was created to test the functionality.
+An ADALM2000 was used to act as the microcontroller, as well as power the LED on. Due to limitations in components that were readily available, this
+model was based on a blue LED with around 3.2V forward volatage and 30mA forward current. The transistor remains the 2N2222 as is used in the actual design.
+
+### Results
+Below is the setup for the OFF signal from the microcontroller. 3.4V are provided to the collector branch of the NPN, and a low signal is output from
+the ADALM. The circuit behaves as expected and the light remains off for this setup.
+
+![image](https://user-images.githubusercontent.com/55333859/197673376-ef4fc73f-4bd0-4ca2-8fe7-475310b3a890.png)
+
+
+![image](https://user-images.githubusercontent.com/55333859/197673064-51d65b9e-d8e0-401f-abe4-c0127a00e843.png)
+
+The setup for the ON signal from the microcontroller is similar to before. There is still 3.4V provided to the collector branch,but now a high signal of
+3.3V is provided to the base branch. The light switches on as expected, validating our circuit design.
+
+![image](https://user-images.githubusercontent.com/55333859/197673813-5c25b071-b9a6-4bb8-84a7-93ac5607012a.png)
+
+![image](https://user-images.githubusercontent.com/55333859/197673946-618238b4-7f05-4991-99fc-cda636de6eb3.png)
+
+### New Developments
+One discovery made while breadboarding the circuit is that adjusting the base voltage can adjust the brightness of the LED. 
+The second design iteration could then focus on adding more adjustability to the LEDs then by either adjusting the microcontroller output
+or similarly, including a digital potentiometer to limit current flow through the LEDs.
+
+![image](https://user-images.githubusercontent.com/55333859/197675358-fce7757b-4bd5-4417-b57c-09b938359839.png)
+
+
+https://user-images.githubusercontent.com/55333859/197675320-b6443df9-65df-4a58-b49f-7ef106ffe3fa.mov
