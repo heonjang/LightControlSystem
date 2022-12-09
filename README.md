@@ -3,6 +3,7 @@
 2. [2022_09_20 - Changes (UV Lights I)](https://github.com/heonjang/LightControlSystem/edit/Christelle/README.md#2022_09_20---changes)
 3. [2022_09_27 - General Changes (UV Lights II)](https://github.com/heonjang/LightControlSystem/edit/Christelle/README.md#2022_09_27---general-changes)
 4. [2022_09_28 - Safety](https://github.com/heonjang/LightControlSystem/edit/Christelle/README.md#2022_09_28---safety)
+5. [2022_09_29 - LED Choice](https://github.com/heonjang/LightControlSystem/edit/Christelle/README.md#2022_09_29---led-choice)
 
 
 
@@ -57,3 +58,21 @@ to switch off the relay and power to the UV light circuit. Additionally, as anot
 entire UV light circuit.
 
 The circuit will be powered using an 311013-01 plug which connect to both the relay and switch.
+
+## 2022_09_29 - LED Choice
+
+###  LED Component Selection (Preliminary)
+
+UVA LED: [XZVS54S-9C](https://www.digikey.com/en/products/detail/sunled/XZVS54S-9C/9920862)
+3.3 V Forward
+1.5A
+
+Blue LED: [XQABLU-02-0000-000000U01](https://www.digikey.com/en/products/detail/creeled-inc/XPCBLU-L1-0000-00W01/2442517)
+3.3 V Forward
+
+Yellow-Red: [710-150080SG54050](https://www.mouser.com/ProductDetail/Wurth-Elektronik/150080SG54050?qs=sGAEpiMZZMusoohG2hS%252B13XB79dZiCCbHkvBdSuOsbMbCoO%2FAYKQfw%3D%3D)
+3.3V 20mA
+
+Green [AA3528ZGSK](https://www.mouser.com/ProductDetail/Kingbright/AA3528ZGSK?qs=sGAEpiMZZMusoohG2hS%252B10BkqeXx1odDDXmYTeDmVc3Gq1YsCYNLGQ%3D%3D)
+3.3V 20mA
+
